@@ -1,0 +1,491 @@
+Determining if the include file sys/sdt.h exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-1vVfLA
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e32d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e32d.dir/build.make CMakeFiles/cmTC_0e32d.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-1vVfLA»
+Building C object CMakeFiles/cmTC_0e32d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_0e32d.dir/CheckIncludeFile.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-1vVfLA/CheckIncludeFile.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-1vVfLA/CheckIncludeFile.c:1:10: fatal error: sys/sdt.h: Нет такого файла или каталога
+    1 | #include <sys/sdt.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_0e32d.dir/build.make:78: CMakeFiles/cmTC_0e32d.dir/CheckIncludeFile.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-1vVfLA»
+gmake: *** [Makefile:127: cmTC_0e32d/fast] Ошибка 2
+
+
+
+Determining if the function connect exists in the socket failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-vM4dNp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b8d0c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b8d0c.dir/build.make CMakeFiles/cmTC_b8d0c.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-vM4dNp»
+Building C object CMakeFiles/cmTC_b8d0c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_b8d0c.dir/CheckFunctionExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-vM4dNp/CheckFunctionExists.c
+Linking C executable cmTC_b8d0c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8d0c.dir/link.txt --verbose=1
+/usr/bin/cc  -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_b8d0c.dir/CheckFunctionExists.c.o -o cmTC_b8d0c  -lsocket 
+/usr/bin/ld: невозможно найти -lsocket: Нет такого файла или каталога
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_b8d0c.dir/build.make:99: cmTC_b8d0c] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-vM4dNp»
+gmake: *** [Makefile:127: cmTC_b8d0c/fast] Ошибка 2
+
+
+
+Determining if the OPENSSL_IS_BORINGSSL exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-wwtGgy
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9f31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9f31.dir/build.make CMakeFiles/cmTC_d9f31.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-wwtGgy»
+Building C object CMakeFiles/cmTC_d9f31.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_d9f31.dir/CheckSymbolExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-wwtGgy/CheckSymbolExists.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-wwtGgy/CheckSymbolExists.c:2:10: fatal error: openssl/base.h: Нет такого файла или каталога
+    2 | #include <openssl/base.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d9f31.dir/build.make:78: CMakeFiles/cmTC_d9f31.dir/CheckSymbolExists.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-wwtGgy»
+gmake: *** [Makefile:127: cmTC_d9f31/fast] Ошибка 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <openssl/base.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OPENSSL_IS_BORINGSSL
+  return ((int*)(&OPENSSL_IS_BORINGSSL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the OPENSSL_IS_AWSLC exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-oFAWce
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93ed8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93ed8.dir/build.make CMakeFiles/cmTC_93ed8.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-oFAWce»
+Building C object CMakeFiles/cmTC_93ed8.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_93ed8.dir/CheckSymbolExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-oFAWce/CheckSymbolExists.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-oFAWce/CheckSymbolExists.c:2:10: fatal error: openssl/base.h: Нет такого файла или каталога
+    2 | #include <openssl/base.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_93ed8.dir/build.make:78: CMakeFiles/cmTC_93ed8.dir/CheckSymbolExists.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-oFAWce»
+gmake: *** [Makefile:127: cmTC_93ed8/fast] Ошибка 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <openssl/base.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OPENSSL_IS_AWSLC
+  return ((int*)(&OPENSSL_IS_AWSLC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the LIBRESSL_VERSION_NUMBER exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2c8ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c8ca.dir/build.make CMakeFiles/cmTC_2c8ca.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked»
+Building C object CMakeFiles/cmTC_2c8ca.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_2c8ca.dir/CheckSymbolExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked/CheckSymbolExists.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked/CheckSymbolExists.c: In function ‘main’:
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked/CheckSymbolExists.c:8:19: error: ‘LIBRESSL_VERSION_NUMBER’ undeclared (first use in this function); did you mean ‘OPENSSL_VERSION_NUMBER’?
+    8 |   return ((int*)(&LIBRESSL_VERSION_NUMBER))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+      |                   OPENSSL_VERSION_NUMBER
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[1]: *** [CMakeFiles/cmTC_2c8ca.dir/build.make:78: CMakeFiles/cmTC_2c8ca.dir/CheckSymbolExists.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-n6Vked»
+gmake: *** [Makefile:127: cmTC_2c8ca/fast] Ошибка 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <openssl/opensslv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef LIBRESSL_VERSION_NUMBER
+  return ((int*)(&LIBRESSL_VERSION_NUMBER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/filio.h exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-GHo05Z
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cd73d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cd73d.dir/build.make CMakeFiles/cmTC_cd73d.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-GHo05Z»
+Building C object CMakeFiles/cmTC_cd73d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_cd73d.dir/CheckIncludeFile.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-GHo05Z/CheckIncludeFile.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-GHo05Z/CheckIncludeFile.c:1:10: fatal error: sys/filio.h: Нет такого файла или каталога
+    1 | #include <sys/filio.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_cd73d.dir/build.make:78: CMakeFiles/cmTC_cd73d.dir/CheckIncludeFile.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-GHo05Z»
+gmake: *** [Makefile:127: cmTC_cd73d/fast] Ошибка 2
+
+
+
+Determining if the include file sys/sockio.h exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-aP10OG
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97d37/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_97d37.dir/build.make CMakeFiles/cmTC_97d37.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-aP10OG»
+Building C object CMakeFiles/cmTC_97d37.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_97d37.dir/CheckIncludeFile.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-aP10OG/CheckIncludeFile.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-aP10OG/CheckIncludeFile.c:1:10: fatal error: sys/sockio.h: Нет такого файла или каталога
+    1 | #include <sys/sockio.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_97d37.dir/build.make:78: CMakeFiles/cmTC_97d37.dir/CheckIncludeFile.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-aP10OG»
+gmake: *** [Makefile:127: cmTC_97d37/fast] Ошибка 2
+
+
+
+Determining if files sys/select.h;sys/socket.h;sys/time.h;sys/types.h;sys/utime.h exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Qx3J1N
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e7e05/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e7e05.dir/build.make CMakeFiles/cmTC_e7e05.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Qx3J1N»
+Building C object CMakeFiles/cmTC_e7e05.dir/HAVE_SYS_UTIME_H.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_e7e05.dir/HAVE_SYS_UTIME_H.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Qx3J1N/HAVE_SYS_UTIME_H.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Qx3J1N/HAVE_SYS_UTIME_H.c:6:10: fatal error: sys/utime.h: Нет такого файла или каталога
+    6 | #include <sys/utime.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_e7e05.dir/build.make:78: CMakeFiles/cmTC_e7e05.dir/HAVE_SYS_UTIME_H.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Qx3J1N»
+gmake: *** [Makefile:127: cmTC_e7e05/fast] Ошибка 2
+
+
+Source:
+/* */
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-BFDv6S
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12a35/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12a35.dir/build.make CMakeFiles/cmTC_12a35.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-BFDv6S»
+Building C object CMakeFiles/cmTC_12a35.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_12a35.dir/CheckIncludeFile.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-BFDv6S/CheckIncludeFile.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-BFDv6S/CheckIncludeFile.c:1:10: fatal error: io.h: Нет такого файла или каталога
+    1 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_12a35.dir/build.make:78: CMakeFiles/cmTC_12a35.dir/CheckIncludeFile.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-BFDv6S»
+gmake: *** [Makefile:127: cmTC_12a35/fast] Ошибка 2
+
+
+
+Determining if the include file netinet/in6.h exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-reD6uI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa4cd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa4cd.dir/build.make CMakeFiles/cmTC_fa4cd.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-reD6uI»
+Building C object CMakeFiles/cmTC_fa4cd.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_fa4cd.dir/CheckIncludeFile.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-reD6uI/CheckIncludeFile.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-reD6uI/CheckIncludeFile.c:1:10: fatal error: netinet/in6.h: Нет такого файла или каталога
+    1 | #include <netinet/in6.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_fa4cd.dir/build.make:78: CMakeFiles/cmTC_fa4cd.dir/CheckIncludeFile.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-reD6uI»
+gmake: *** [Makefile:127: cmTC_fa4cd/fast] Ошибка 2
+
+
+
+Determining if the include file stropts.h exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-V852UL
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9472/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9472.dir/build.make CMakeFiles/cmTC_d9472.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-V852UL»
+Building C object CMakeFiles/cmTC_d9472.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_d9472.dir/CheckIncludeFile.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-V852UL/CheckIncludeFile.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-V852UL/CheckIncludeFile.c:1:10: fatal error: stropts.h: Нет такого файла или каталога
+    1 | #include <stropts.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d9472.dir/build.make:78: CMakeFiles/cmTC_d9472.dir/CheckIncludeFile.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-V852UL»
+gmake: *** [Makefile:127: cmTC_d9472/fast] Ошибка 2
+
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Sd3w5u
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cda16/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cda16.dir/build.make CMakeFiles/cmTC_cda16.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Sd3w5u»
+Building C object CMakeFiles/cmTC_cda16.dir/SIZEOF___INT64.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_cda16.dir/SIZEOF___INT64.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Sd3w5u/SIZEOF___INT64.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Sd3w5u/SIZEOF___INT64.c:27:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+   27 | #define SIZE (sizeof(__int64))
+      |                      ^~~~~~~
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Sd3w5u/SIZEOF___INT64.c:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+gmake[1]: *** [CMakeFiles/cmTC_cda16.dir/build.make:78: CMakeFiles/cmTC_cda16.dir/SIZEOF___INT64.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-Sd3w5u»
+gmake: *** [Makefile:127: cmTC_cda16/fast] Ошибка 2
+
+
+SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the closesocket exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6b539/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6b539.dir/build.make CMakeFiles/cmTC_6b539.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA»
+Building C object CMakeFiles/cmTC_6b539.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_6b539.dir/CheckSymbolExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA/CheckSymbolExists.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA/CheckSymbolExists.c: In function ‘main’:
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA/CheckSymbolExists.c:20:19: error: ‘closesocket’ undeclared (first use in this function)
+   20 |   return ((int*)(&closesocket))[argc];
+      |                   ^~~~~~~~~~~
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA/CheckSymbolExists.c:20:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA/CheckSymbolExists.c:16:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   16 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[1]: *** [CMakeFiles/cmTC_6b539.dir/build.make:78: CMakeFiles/cmTC_6b539.dir/CheckSymbolExists.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-TkhTGA»
+gmake: *** [Makefile:127: cmTC_6b539/fast] Ошибка 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <netinet/udp.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function getpass_r exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-PStnUX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_623ff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_623ff.dir/build.make CMakeFiles/cmTC_623ff.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-PStnUX»
+Building C object CMakeFiles/cmTC_623ff.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=getpass_r -o CMakeFiles/cmTC_623ff.dir/CheckFunctionExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-PStnUX/CheckFunctionExists.c
+Linking C executable cmTC_623ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_623ff.dir/link.txt --verbose=1
+/usr/bin/cc  -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=getpass_r CMakeFiles/cmTC_623ff.dir/CheckFunctionExists.c.o -o cmTC_623ff 
+/usr/bin/ld: CMakeFiles/cmTC_623ff.dir/CheckFunctionExists.c.o: в функции «main»:
+CheckFunctionExists.c:(.text+0x10): неопределённая ссылка на «getpass_r»
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_623ff.dir/build.make:99: cmTC_623ff] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-PStnUX»
+gmake: *** [Makefile:127: cmTC_623ff/fast] Ошибка 2
+
+
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d7438/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7438.dir/build.make CMakeFiles/cmTC_d7438.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz»
+Building C object CMakeFiles/cmTC_d7438.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_d7438.dir/CheckSymbolExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz/CheckSymbolExists.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz/CheckSymbolExists.c: In function ‘main’:
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz/CheckSymbolExists.c:8:19: error: ‘stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+    8 |   return ((int*)(&stricmp))[argc];
+      |                   ^~~~~~~
+      |                   strncmp
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[1]: *** [CMakeFiles/cmTC_d7438.dir/build.make:78: CMakeFiles/cmTC_d7438.dir/CheckSymbolExists.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-shRxhz»
+gmake: *** [Makefile:127: cmTC_d7438/fast] Ошибка 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5c417/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c417.dir/build.make CMakeFiles/cmTC_5c417.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU»
+Building C object CMakeFiles/cmTC_5c417.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_5c417.dir/CheckSymbolExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU/CheckSymbolExists.c
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU/CheckSymbolExists.c: In function ‘main’:
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU/CheckSymbolExists.c:8:19: error: ‘strcmpi’ undeclared (first use in this function); did you mean ‘strcmp’?
+    8 |   return ((int*)(&strcmpi))[argc];
+      |                   ^~~~~~~
+      |                   strcmp
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[1]: *** [CMakeFiles/cmTC_5c417.dir/build.make:78: CMakeFiles/cmTC_5c417.dir/CheckSymbolExists.c.o] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-RCrKKU»
+gmake: *** [Makefile:127: cmTC_5c417/fast] Ошибка 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function setmode exists failed with the following output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-0tZ00W
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_28163/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_28163.dir/build.make CMakeFiles/cmTC_28163.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-0tZ00W»
+Building C object CMakeFiles/cmTC_28163.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=setmode -o CMakeFiles/cmTC_28163.dir/CheckFunctionExists.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-0tZ00W/CheckFunctionExists.c
+Linking C executable cmTC_28163
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28163.dir/link.txt --verbose=1
+/usr/bin/cc  -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=setmode CMakeFiles/cmTC_28163.dir/CheckFunctionExists.c.o -o cmTC_28163 
+/usr/bin/ld: CMakeFiles/cmTC_28163.dir/CheckFunctionExists.c.o: в функции «main»:
+CheckFunctionExists.c:(.text+0x10): неопределённая ссылка на «setmode»
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_28163.dir/build.make:99: cmTC_28163] Ошибка 1
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-0tZ00W»
+gmake: *** [Makefile:127: cmTC_28163/fast] Ошибка 2
+
+
+
+Performing C SOURCE FILE Test HAVE_TIME_T_UNSIGNED failed with the following compile output:
+Change Dir: /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-cj8Rgr
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d2592/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d2592.dir/build.make CMakeFiles/cmTC_d2592.dir/build
+gmake[1]: вход в каталог «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-cj8Rgr»
+Building C object CMakeFiles/cmTC_d2592.dir/src.c.o
+/usr/bin/cc -DHAVE_TIME_T_UNSIGNED  -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_d2592.dir/src.c.o -c /home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-cj8Rgr/src.c
+Linking C executable cmTC_d2592
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2592.dir/link.txt --verbose=1
+/usr/bin/cc  -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wcast-qual -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -ftree-vrp -Wjump-misses-init -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  CMakeFiles/cmTC_d2592.dir/src.c.o -o cmTC_d2592 
+gmake[1]: выход из каталога «/home/vitaliy/o1c_panel/scand/build/CMakeFiles/CMakeScratch/TryCompile-cj8Rgr»
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+    #include <time.h>
+    int main(void) {
+      time_t t = -1;
+      return t < 0;
+    }
+

@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/CMakeFiles/curl-populate
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
+/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule

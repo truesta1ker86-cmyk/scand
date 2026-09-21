@@ -1,0 +1,11 @@
+[binaries]
+c = '/usr/bin/cc'
+cpp = '/usr/bin/c++'
+ar = '/usr/bin/ar'
+strip = '/usr/bin/strip'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'

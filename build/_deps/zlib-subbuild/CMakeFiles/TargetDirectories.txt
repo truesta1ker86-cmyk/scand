@@ -1,0 +1,3 @@
+/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/CMakeFiles/zlib-populate.dir
+/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/CMakeFiles/edit_cache.dir
+/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/CMakeFiles/rebuild_cache.dir
