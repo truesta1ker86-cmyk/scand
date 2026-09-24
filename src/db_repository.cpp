@@ -21,8 +21,11 @@ scand::VoidResult DbRepository::upsert_batch_1c(const std::vector<Product1C>& pr
                 "  id TEXT, offer_id TEXT, name TEXT, price NUMERIC(12,2)"
                 ") ON COMMIT DROP");
 
-        pqxx::stream_to stream(tx, "tmp_products_1c",
-            std::vector<std::string>{"id", "offer_id", "name", "price"});
+        auto stream = pqxx::stream_to::table(
+            tx,
+            {"tmp_products_1c"},
+            std::vector<std::string>{"id", "offer_id", "name", "price"}
+        );
 
         for (const auto& p : products)
             stream << std::make_tuple(p.id, p.offer_id, p.name, p.price);
@@ -80,11 +83,15 @@ scand::VoidResult DbRepository::upsert_batch_ozon(const std::vector<OzonProduct>
                 "  created_at TEXT, updated_at TEXT, scategorie TEXT, related_products TEXT"
                 ") ON COMMIT DROP");
 
-        pqxx::stream_to stream(tx, "tmp_products",
+        auto stream = pqxx::stream_to::table(
+            tx,
+            {"tmp_products"},
             std::vector<std::string>{
                 "id", "sku", "name", "price", "currency", "in_stock",
                 "description", "weight", "created_at", "updated_at",
-                "scategorie", "related_products"});
+                "scategorie", "related_products"
+            }
+        );
 
         for (const auto& p : products) {
             stream << std::make_tuple(
