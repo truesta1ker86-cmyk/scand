@@ -6,11 +6,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
 
-# ==============================================================================
-# Зависимости через FetchContent (скачиваются автоматически)
-# ==============================================================================
+macro(find_program variable)
+    if("${ARGV1}" STREQUAL "meson")
+        set(${variable} "MESON-NOTFOUND" CACHE INTERNAL "")
+    else()
+        _find_program(${variable} ${ARGN})
+    endif()
+endmacro()
 
-# 1. CPR (C++ Requests)
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/fake_libpsl")
+FetchContent_Declare(
+    libpsl_src
+    SOURCE_DIR "${CMAKE_BINARY_DIR}/fake_libpsl"
+)
+FetchContent_MakeAvailable(libpsl_src)
+
+
 FetchContent_Declare(
     cpr
     GIT_REPOSITORY https://github.com/libcpr/cpr.git
@@ -19,6 +30,7 @@ FetchContent_Declare(
 
 set(CPR_BUILD_REQS_FROM_SOURCE OFF CACHE INTERNAL "")
 set(CMAKE_USE_LIBPSL OFF CACHE INTERNAL "")
+set(CURL_USE_LIBPSL OFF CACHE INTERNAL "")
 set(CPR_BUILD_TESTS OFF CACHE INTERNAL "")
 FetchContent_MakeAvailable(cpr)
 
