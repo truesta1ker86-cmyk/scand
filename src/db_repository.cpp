@@ -24,7 +24,7 @@ scand::VoidResult DbRepository::upsert_batch_1c(const std::vector<Product1C>& pr
         auto stream = pqxx::stream_to::table(
             tx,
             {"tmp_products_1c"},
-            std::vector<std::string>{"id", "offer_id", "name", "price"}
+            {"id", "offer_id", "name", "price"}
         );
 
         for (const auto& p : products)
@@ -86,7 +86,7 @@ scand::VoidResult DbRepository::upsert_batch_ozon(const std::vector<OzonProduct>
         auto stream = pqxx::stream_to::table(
             tx,
             {"tmp_products"},
-            std::vector<std::string>{
+            {
                 "id", "sku", "name", "price", "currency", "in_stock",
                 "description", "weight", "created_at", "updated_at",
                 "scategorie", "related_products"
