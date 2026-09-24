@@ -50,7 +50,7 @@ target_link_libraries(scand PRIVATE
     OpenSSL::Crypto
 )
 
-target_compile_options(scand PRIVATE -Wall -Wextra -O2 -g)
+target_compile_options(scand PRIVATE -Wall -Wextra -O2 -g -Wno-deprecated-declarations)
 target_link_options(scand PRIVATE -rdynamic)
 
 configure_file(
