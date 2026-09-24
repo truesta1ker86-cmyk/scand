@@ -256,9 +256,8 @@ OneCProductCatalogPullResult pull_onec_product_catalog(
 
     if (!records.empty()) {
         // Пакетная вставка через COPY
-        pqxx::stream_to stream(tx, "inventory1c_products",
-            std::vector<std::string>{
-                "tenant_id", "code", "article", "name", "ref_key", "measured_at"});
+        auto stream = pqxx::stream_to::table(tx, {"inventory1c_products"},
+            {"tenant_id", "code", "article", "name", "ref_key", "measured_at"});
         for (const auto& rec : records) {
             stream << std::make_tuple(
                 tenant_id, rec.code, rec.article, rec.name,
@@ -492,8 +491,8 @@ OneCProductCatalogPullResult pull_onec_product_catalog_sse(
                    opts.tenant_id);
 
     if (!records.empty()) {
-        pqxx::stream_to stream(tx, "inventory1c_products",
-            std::vector<std::string>{
+        auto stream = pqxx::stream_to::table(tx, {"inventory1c_products"},
+            {
                 "tenant_id","code","article","name","ref_key","measured_at"});
         for (const auto& rec : records) {
             stream << std::make_tuple(opts.tenant_id, rec.code, rec.article,
