@@ -2,9 +2,9 @@ name: CMake Build & Deploy
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -49,7 +49,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    if: github.event_name == 'push' &&  github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' &&  github.ref == 'refs/heads/main'
 
     steps:
       - name: Download Build Artifact
