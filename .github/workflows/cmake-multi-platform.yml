@@ -1,3 +1,15 @@
+name: CMake Build
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -5,12 +17,21 @@
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          # Обязательно доставляем meson, ninja и системный curl для воркера
-          sudo apt-get install -y cmake build-essential libboost-system-dev libboost-json-dev libssl-dev libpqxx-dev pkg-config meson ninja-build libcurl4-openssl-dev
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            pkg-config \
+            libboost-system-dev \
+            libboost-json-dev \
+            libssl-dev \
+            libpqxx-dev \
+            libcurl4-openssl-dev \
+            meson \
+            ninja-build
 
       - name: Configure CMake
-        # Флаг --fresh принудительно очистит кэш самого CMake, если он подтянулся из GitHub Cache
-        run: cmake -B build -S . --fresh
+        # Флаг --fresh гарантирует, что старый кэш CMake не вызовет ошибку
+        run: cmake -B build -S . --fresh -DCMAKE_BUILD_TYPE=Release
 
-      - name: Build
+      - name: Build project
         run: cmake --build build --config Release
