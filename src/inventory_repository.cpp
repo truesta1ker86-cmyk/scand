@@ -185,8 +185,8 @@ scand::Result<ImportResult> InventoryRepository::import_snapshot(
                     "  warehouse_name VARCHAR(255)"
                     ") ON COMMIT DROP");
 
-            pqxx::stream_to stream(tx, "tmp_wh",
-                std::vector<std::string>{"warehouse_id", "warehouse_name"});
+            auto stream = pqxx::stream_to::table(tx, "tmp_wh",
+                {"warehouse_id", "warehouse_name"});
 
             for (const auto& w : req.warehouses) {
                 stream << std::make_tuple(w.warehouse_id, w.warehouse_name);
@@ -215,8 +215,8 @@ scand::Result<ImportResult> InventoryRepository::import_snapshot(
                     "  reserved       BIGINT"
                     ") ON COMMIT DROP");
 
-            pqxx::stream_to stream(tx, "tmp_stocks",
-                std::vector<std::string>{
+            auto stream = pqxx::stream_to::table(tx, "tmp_stocks",
+                {
                     "sku_1c", "offer_id", "warehouse_id",
                     "available", "reserved"});
 
