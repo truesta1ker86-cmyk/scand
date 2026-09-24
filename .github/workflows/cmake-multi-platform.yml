@@ -64,7 +64,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT || 22 }}
           source: "./dist/*"
-          target: "/opt/scand"
+          target: "/scand"
           strip_components: 1
 
       - name: Restart Service via SSH
