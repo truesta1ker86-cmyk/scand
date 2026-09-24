@@ -185,7 +185,7 @@ scand::Result<ImportResult> InventoryRepository::import_snapshot(
                     "  warehouse_name VARCHAR(255)"
                     ") ON COMMIT DROP");
 
-            auto stream = pqxx::stream_to::table(tx, "tmp_wh",
+            auto stream = pqxx::stream_to::table(tx, {"tmp_wh"},
                 {"warehouse_id", "warehouse_name"});
 
             for (const auto& w : req.warehouses) {
@@ -215,7 +215,7 @@ scand::Result<ImportResult> InventoryRepository::import_snapshot(
                     "  reserved       BIGINT"
                     ") ON COMMIT DROP");
 
-            auto stream = pqxx::stream_to::table(tx, "tmp_stocks",
+            auto stream = pqxx::stream_to::table(tx, {"tmp_stocks"},
                 {
                     "sku_1c", "offer_id", "warehouse_id",
                     "available", "reserved"});
