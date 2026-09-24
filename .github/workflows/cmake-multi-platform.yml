@@ -1,15 +1,15 @@
-name: CMake Build
+name: CMake Build & Deploy
 
 on:
   push:
-    branches: [ "main", "master" ]
-  pull_request:
     branches: [ "main", "master" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    # Создаем артефакт, чтобы передать собранный бинарник в шаг деплоя
+    outputs:
+      artifact-name: scand-binary
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,14 +24,56 @@ jobs:
             libboost-system-dev \
             libboost-json-dev \
             libssl-dev \
-            libpqxx-dev \
-            libcurl4-openssl-dev \
-            meson \
-            ninja-build
+            libcurl4-openssl-dev
 
       - name: Configure CMake
-        # Флаг --fresh гарантирует, что старый кэш CMake не вызовет ошибку
         run: cmake -B build -S . --fresh -DCMAKE_BUILD_TYPE=Release
 
       - name: Build project
-        run: cmake --build build --config Release
+        run: cmake --build build --config Release -j$(nproc)
+
+      # Архивируем готовый бинарный файл scand и конфиг
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scand-binary
+          path: |
+            build/scand
+            build/config.ini
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build # Запускать деплой ТОЛЬКО если сборка прошла успешно
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: scand-binary
+          path: ./dist
+
+      - name: Deploy to Server via SSH
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          source: "./dist/*"
+          # Путь на вашем Debian-сервере, куда положить файлы (замените на свой)
+          target: "/opt/scand"
+          strip_components: 1
+
+      - name: Restart Service via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          # Скрипт перезапуска приложения на сервере
+          script: |
+            chmod +x /opt/scand/scand
+            # Если вы используете systemd службу (рекомендуется):
+            sudo systemctl restart scand.service || echo "Служба еще не настроена"
