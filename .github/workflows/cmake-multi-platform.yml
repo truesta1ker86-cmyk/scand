@@ -27,7 +27,9 @@ jobs:
             libboost-system-dev \
             libboost-json-dev \
             libssl-dev \
-            libcurl4-openssl-dev
+            libcurl4-openssl-dev \
+            meson \
+            ninja-build
 
       - name: Configure CMake
         run: cmake -B build -S . --fresh -DCMAKE_BUILD_TYPE=Release
