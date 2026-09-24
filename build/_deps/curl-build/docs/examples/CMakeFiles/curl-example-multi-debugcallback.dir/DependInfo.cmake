@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/multi-debugcallback.c" "_deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.o" "gcc" "_deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.o.d"
+  "/home/vitaliy/scand/build/_deps/curl-src/docs/examples/multi-debugcallback.c" "_deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.o" "gcc" "_deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/DependInfo.cmake"
+  "/home/vitaliy/scand/build/_deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/multipart.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/multipart.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/multipart.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/multipart.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/multipart.h \
  /usr/include/c++/12/cstdint \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -119,8 +119,8 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/multipart.cpp.o: \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/buffer.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/filesystem.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/buffer.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/filesystem.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/system_error \
  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
@@ -179,4 +179,4 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/multipart.cpp.o: \
  /usr/include/c++/12/bits/uses_allocator.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/file.h
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/file.h

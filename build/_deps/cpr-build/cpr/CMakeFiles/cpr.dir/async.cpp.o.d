@@ -1,8 +1,8 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/async.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/async.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/async.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/async.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/async_wrapper.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/async.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/async_wrapper.h \
  /usr/include/c++/12/atomic /usr/include/c++/12/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -166,9 +166,9 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/async.cpp.o: \
  /usr/include/c++/12/backward/auto_ptr.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/singleton.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/singleton.h \
  /usr/include/c++/12/cassert /usr/include/assert.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/threadpool.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/threadpool.h \
  /usr/include/c++/12/chrono /usr/include/c++/12/functional \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h \

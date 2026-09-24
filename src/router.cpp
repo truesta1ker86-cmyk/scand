@@ -8,6 +8,28 @@ std::string strip_query(const std::string& target) {
     return (pos == std::string::npos) ? target : target.substr(0, pos);
 }
 
+// Парсим ?key=value&key2=value2
+std::unordered_map<std::string, std::string>
+parse_query(const std::string& target) {
+    std::unordered_map<std::string, std::string> out;
+    auto qpos = target.find('?');
+    if (qpos == std::string::npos) return out;
+
+    std::string qs = target.substr(qpos + 1);
+    std::istringstream ss(qs);
+    std::string pair;
+    while (std::getline(ss, pair, '&')) {
+        if (pair.empty()) continue;
+        auto eq = pair.find('=');
+        if (eq == std::string::npos) {
+            out[pair] = "";
+        } else {
+            out[pair.substr(0, eq)] = pair.substr(eq + 1);
+        }
+    }
+    return out;
+}
+
 } // namespace
 
 void Router::add(http::verb method, const std::string& pattern, Handler handler) {
@@ -55,6 +77,9 @@ Response Router::dispatch(http::verb method,
     std::string path = strip_query(target);
     auto segments = split_path(path);
 
+    // ← Парсим query один раз, используется во всех route.handler
+    auto query_params = parse_query(target);
+
     bool path_matched_any = false;
 
     for (const auto& route : routes_) {
@@ -65,7 +90,9 @@ Response Router::dispatch(http::verb method,
 
         if (route.method != method) continue;
 
-        RequestContext ctx{req, json::object(), std::move(params)};
+        // ← Передаём query_params в RequestContext
+        RequestContext ctx{req, json::object(), std::move(params), query_params};
+
         if (!req.body().empty()) {
             try {
                 ctx.body = json::parse(req.body());

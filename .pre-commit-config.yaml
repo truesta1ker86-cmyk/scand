@@ -1,0 +1,6 @@
+- repo: local
+  hooks:
+    - id: no-cyrillic-idents
+      name: No Cyrillic in C++ identifiers
+      entry: bash -c 'grep -rP "[\x{0400}-\x{04FF}]" --include="*.hpp" --include="*.cpp" src include && exit 1 || exit 0'
+      language: system

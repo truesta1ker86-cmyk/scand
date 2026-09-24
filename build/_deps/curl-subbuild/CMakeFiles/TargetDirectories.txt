@@ -1,3 +1,3 @@
-/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/CMakeFiles/curl-populate.dir
-/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/CMakeFiles/edit_cache.dir
-/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/CMakeFiles/rebuild_cache.dir
+/home/vitaliy/scand/build/_deps/curl-subbuild/CMakeFiles/curl-populate.dir
+/home/vitaliy/scand/build/_deps/curl-subbuild/CMakeFiles/edit_cache.dir
+/home/vitaliy/scand/build/_deps/curl-subbuild/CMakeFiles/rebuild_cache.dir

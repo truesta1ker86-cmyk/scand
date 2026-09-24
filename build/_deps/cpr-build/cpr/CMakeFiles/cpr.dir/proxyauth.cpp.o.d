@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxyauth.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/proxyauth.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/proxyauth.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/proxyauth.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/proxyauth.h \
  /usr/include/c++/12/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -123,8 +123,8 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxyauth.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/auth.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/util.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/auth.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/util.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/istream \
  /usr/include/c++/12/ios /usr/include/c++/12/exception \
  /usr/include/c++/12/bits/exception_ptr.h \
@@ -183,11 +183,11 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxyauth.cpp.o: \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/callback.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/callback.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -213,15 +213,15 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxyauth.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/multi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/urlapi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/header.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/websockets.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/mprintf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/multi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/urlapi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/options.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/header.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/websockets.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/mprintf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/c++/12/numeric /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h /usr/include/c++/12/atomic \
  /usr/include/c++/12/functional /usr/include/c++/12/bits/std_function.h \
@@ -234,14 +234,14 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxyauth.cpp.o: \
  /usr/include/c++/12/bits/stl_heap.h \
  /usr/include/c++/12/bits/uniform_int_dist.h /usr/include/c++/12/optional \
  /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cookies.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cookies.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
  /usr/include/c++/12/mutex /usr/include/c++/12/bits/chrono.h \
  /usr/include/c++/12/ratio /usr/include/c++/12/limits \
  /usr/include/c++/12/ctime /usr/include/c++/12/bits/parse_numbers.h \
  /usr/include/c++/12/bits/std_mutex.h \
  /usr/include/c++/12/bits/unique_lock.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
  /usr/include/c++/12/chrono \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/sse.h
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/sse.h

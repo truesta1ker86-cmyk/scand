@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/timeout.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/timeout.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/timeout.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/timeout.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/timeout.h \
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \
  /usr/include/c++/12/ratio /usr/include/c++/12/type_traits \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \

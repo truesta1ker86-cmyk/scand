@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxies.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/proxies.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/proxies.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/proxies.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/proxies.h \
  /usr/include/c++/12/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \

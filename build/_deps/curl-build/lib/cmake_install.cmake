@@ -1,4 +1,4 @@
-# Install script for directory: /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib
+# Install script for directory: /home/vitaliy/scand/build/_deps/curl-src/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,8 +55,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/libcurl.so.4.8.0"
-    "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/libcurl.so.4"
+    "/home/vitaliy/scand/build/_deps/curl-build/lib/libcurl.so.4.8.0"
+    "/home/vitaliy/scand/build/_deps/curl-build/lib/libcurl.so.4"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcurl.so.4.8.0"
@@ -78,7 +78,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcurl.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/libcurl.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/vitaliy/scand/build/_deps/curl-build/lib/libcurl.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcurl.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcurl.so")
     if(CMAKE_INSTALL_DO_STRIP)

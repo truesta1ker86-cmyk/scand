@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/fla
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/flags.make
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o: _deps/curl-src/docs/examples/pop3-uidl.c
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o -MF CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o.d -o CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o -c /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/pop3-uidl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o -MF CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o.d -o CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o -c /home/vitaliy/scand/build/_deps/curl-src/docs/examples/pop3-uidl.c
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.i"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/pop3-uidl.c > CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.i
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/scand/build/_deps/curl-src/docs/examples/pop3-uidl.c > CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.i
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.s"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/pop3-uidl.c -o CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.s
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/scand/build/_deps/curl-src/docs/examples/pop3-uidl.c -o CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.s
 
 # Object files for target curl-example-pop3-uidl
 curl__example__pop3__uidl_OBJECTS = \
@@ -98,18 +98,18 @@ _deps/curl-build/docs/examples/pop3-uidl: /usr/lib/x86_64-linux-gnu/libcrypto.so
 _deps/curl-build/docs/examples/pop3-uidl: /usr/lib/x86_64-linux-gnu/libz.so
 _deps/curl-build/docs/examples/pop3-uidl: libpsl_src-install/lib/libpsl.a
 _deps/curl-build/docs/examples/pop3-uidl: _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pop3-uidl"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-pop3-uidl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pop3-uidl"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-pop3-uidl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build: _deps/curl-build/docs/examples/pop3-uidl
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-pop3-uidl.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-pop3-uidl.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/clean
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src/docs/examples /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build/docs/examples /home/vitaliy/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/depend
 

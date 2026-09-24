@@ -1,9 +1,7 @@
 CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: \
- /home/vitaliy/o1c_panel/scand/src/ozon_handlers.cpp \
- /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/include/ozon_handlers.hpp \
- /home/vitaliy/o1c_panel/scand/include/router.hpp \
- /usr/include/boost/beast/http.hpp \
+ /home/vitaliy/scand/src/ozon_handlers.cpp /usr/include/stdc-predef.h \
+ /home/vitaliy/scand/include/ozon_handlers.hpp \
+ /home/vitaliy/scand/include/router.hpp /usr/include/boost/beast/http.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
@@ -65,6 +63,7 @@ CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/12/bits/std_abs.h \
  /usr/include/boost/config/detail/posix_features.hpp \
@@ -147,9 +146,9 @@ CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/12/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/c++/12/cerrno \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
@@ -1084,13 +1083,60 @@ CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: \
  /usr/include/boost/json/detail/value_to.hpp \
  /usr/include/boost/describe/enum_from_string.hpp \
  /usr/include/boost/json/visit.hpp /usr/include/boost/json/impl/visit.hpp \
- /home/vitaliy/o1c_panel/scand/include/sync_service.hpp \
- /home/vitaliy/o1c_panel/scand/include/db_repository.hpp \
- /home/vitaliy/o1c_panel/scand/include/product.hpp \
- /home/vitaliy/o1c_panel/scand/include/sync_checkpoint.hpp \
- /home/vitaliy/o1c_panel/scand/include/notifier.hpp \
- /home/vitaliy/o1c_panel/scand/include/sse_broker.hpp \
- /usr/include/boost/asio.hpp \
+ /home/vitaliy/scand/include/sync_service.hpp \
+ /home/vitaliy/scand/include/db_pool.hpp /usr/include/pqxx/pqxx \
+ /usr/include/pqxx/array /usr/include/pqxx/array.hxx \
+ /usr/include/pqxx/compiler-public.hxx \
+ /usr/include/pqxx/config-public-compiler.h /usr/include/c++/12/ciso646 \
+ /usr/include/pqxx/compiler-internal-pre.hxx \
+ /usr/include/pqxx/internal/encoding_group.hxx \
+ /usr/include/pqxx/internal/encodings.hxx \
+ /usr/include/pqxx/compiler-internal-post.hxx \
+ /usr/include/pqxx/binarystring /usr/include/pqxx/binarystring.hxx \
+ /usr/include/pqxx/result.hxx /usr/include/pqxx/except.hxx \
+ /usr/include/pqxx/util.hxx /usr/include/pqxx/strconv.hxx \
+ /usr/include/pqxx/internal/libpq-forward.hxx /usr/include/pqxx/types.hxx \
+ /usr/include/pqxx/connection /usr/include/pqxx/connection.hxx \
+ /usr/include/pqxx/connectionpolicy.hxx \
+ /usr/include/pqxx/basic_connection.hxx \
+ /usr/include/pqxx/connection_base.hxx /usr/include/c++/12/bitset \
+ /usr/include/c++/12/list /usr/include/c++/12/bits/stl_list.h \
+ /usr/include/c++/12/bits/list.tcc /usr/include/c++/12/map \
+ /usr/include/c++/12/bits/stl_tree.h /usr/include/c++/12/bits/stl_map.h \
+ /usr/include/c++/12/bits/stl_multimap.h \
+ /usr/include/pqxx/errorhandler.hxx \
+ /usr/include/pqxx/prepared_statement.hxx \
+ /usr/include/pqxx/internal/statement_parameters.hxx \
+ /usr/include/pqxx/strconv /usr/include/pqxx/util \
+ /usr/include/pqxx/internal/type_utils.hxx /usr/include/pqxx/version.hxx \
+ /usr/include/pqxx/internal/ignore-deprecated-pre.hxx \
+ /usr/include/pqxx/internal/ignore-deprecated-post.hxx \
+ /usr/include/pqxx/cursor /usr/include/pqxx/cursor.hxx \
+ /usr/include/pqxx/transaction_base.hxx /usr/include/pqxx/isolation.hxx \
+ /usr/include/pqxx/row.hxx /usr/include/pqxx/field.hxx \
+ /usr/include/pqxx/internal/sql_cursor.hxx /usr/include/pqxx/errorhandler \
+ /usr/include/pqxx/except /usr/include/pqxx/largeobject \
+ /usr/include/pqxx/largeobject.hxx /usr/include/pqxx/dbtransaction.hxx \
+ /usr/include/pqxx/nontransaction /usr/include/pqxx/nontransaction.hxx \
+ /usr/include/pqxx/notification /usr/include/pqxx/notification.hxx \
+ /usr/include/pqxx/pipeline /usr/include/pqxx/pipeline.hxx \
+ /usr/include/pqxx/prepared_statement /usr/include/pqxx/result \
+ /usr/include/pqxx/result_iterator.hxx \
+ /usr/include/pqxx/robusttransaction \
+ /usr/include/pqxx/robusttransaction.hxx /usr/include/pqxx/stream_from \
+ /usr/include/pqxx/stream_from.hxx /usr/include/pqxx/stream_base.hxx \
+ /usr/include/pqxx/stream_to /usr/include/pqxx/stream_to.hxx \
+ /usr/include/pqxx/subtransaction /usr/include/pqxx/subtransaction.hxx \
+ /usr/include/pqxx/transaction /usr/include/pqxx/transaction.hxx \
+ /usr/include/pqxx/transactor /usr/include/pqxx/transactor.hxx \
+ /usr/include/c++/12/condition_variable /usr/include/c++/12/deque \
+ /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
+ /home/vitaliy/scand/include/db_repository.hpp \
+ /home/vitaliy/scand/include/product.hpp \
+ /home/vitaliy/scand/include/result.hpp \
+ /home/vitaliy/scand/include/sync_checkpoint.hpp \
+ /home/vitaliy/scand/include/notifier.hpp \
+ /home/vitaliy/scand/include/sse_broker.hpp /usr/include/boost/asio.hpp \
  /usr/include/boost/asio/any_completion_executor.hpp \
  /usr/include/boost/asio/impl/any_completion_executor.ipp \
  /usr/include/boost/asio/any_completion_handler.hpp \
@@ -1502,7 +1548,6 @@ CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: \
  /usr/include/boost/asio/local/stream_protocol.hpp \
  /usr/include/boost/asio/packaged_task.hpp \
  /usr/include/boost/asio/detail/future.hpp /usr/include/c++/12/future \
- /usr/include/c++/12/condition_variable \
  /usr/include/c++/12/bits/atomic_futex.h \
  /usr/include/c++/12/bits/std_thread.h \
  /usr/include/boost/asio/placeholders.hpp /usr/include/boost/bind/arg.hpp \
@@ -1816,18 +1861,14 @@ CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: \
  /usr/include/boost/beast/websocket/impl/stream.hpp \
  /usr/include/boost/beast/websocket/impl/write.hpp \
  /usr/include/boost/beast/zlib.hpp /usr/include/c++/12/set \
- /usr/include/c++/12/bits/stl_tree.h /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/c++/12/bits/stl_set.h \
  /usr/include/c++/12/bits/stl_multiset.h \
- /home/vitaliy/o1c_panel/scand/include/onec_catalog_sync.hpp \
- /home/vitaliy/o1c_panel/scand/include/onec_catalog.hpp \
- /home/vitaliy/o1c_panel/scand/include/onec_types.hpp \
- /home/vitaliy/o1c_panel/scand/include/onec_sync_repository.hpp \
- /home/vitaliy/o1c_panel/scand/include/onec_client.hpp \
- /home/vitaliy/o1c_panel/scand/include/ozon_client.hpp \
- /home/vitaliy/o1c_panel/scand/include/sync_state.hpp \
- /home/vitaliy/o1c_panel/scand/include/worker_pool.hpp \
- /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
+ /home/vitaliy/scand/include/onec_client.hpp \
+ /home/vitaliy/scand/include/ozon_client.hpp \
+ /home/vitaliy/scand/include/sync_runs_repository.hpp \
+ /home/vitaliy/scand/include/sync_state.hpp \
+ /home/vitaliy/scand/include/worker_pool.hpp /usr/include/c++/12/queue \
  /usr/include/c++/12/bits/stl_queue.h /usr/include/c++/12/thread \
  /usr/include/c++/12/bits/this_thread_sleep.h \
- /usr/include/c++/12/iostream
+ /usr/include/c++/12/iostream \
+ /home/vitaliy/scand/include/webhook_store.hpp

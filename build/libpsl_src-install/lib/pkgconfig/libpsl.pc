@@ -1,4 +1,4 @@
-prefix=/home/vitaliy/o1c_panel/scand/build/libpsl_src-install
+prefix=/home/vitaliy/scand/build/libpsl_src-install
 includedir=${prefix}/include
 libdir=${prefix}/lib
 

@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/error.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/error.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/error.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/error.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/error.h \
  /usr/include/c++/12/cstdint \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -124,10 +124,10 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/error.cpp.o: \
  /usr/include/c++/12/bits/node_handle.h \
  /usr/include/c++/12/bits/unordered_map.h \
  /usr/include/c++/12/bits/erase_if.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -158,15 +158,15 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/error.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/multi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/urlapi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/header.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/websockets.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/mprintf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/multi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/urlapi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/options.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/header.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/websockets.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/mprintf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/bits/stl_map.h \
  /usr/include/c++/12/bits/stl_multimap.h /usr/include/c++/12/memory \
@@ -202,4 +202,4 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/error.cpp.o: \
  /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h /usr/include/c++/12/utility \
  /usr/include/c++/12/bits/stl_relops.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h

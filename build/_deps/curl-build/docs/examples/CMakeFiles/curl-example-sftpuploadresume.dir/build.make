@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/flags.make
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o: _deps/curl-src/docs/examples/sftpuploadresume.c
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o -MF CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o.d -o CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o -c /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/sftpuploadresume.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o -MF CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o.d -o CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o -c /home/vitaliy/scand/build/_deps/curl-src/docs/examples/sftpuploadresume.c
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.i"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/sftpuploadresume.c > CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.i
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/scand/build/_deps/curl-src/docs/examples/sftpuploadresume.c > CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.i
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.s"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/sftpuploadresume.c -o CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.s
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/scand/build/_deps/curl-src/docs/examples/sftpuploadresume.c -o CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.s
 
 # Object files for target curl-example-sftpuploadresume
 curl__example__sftpuploadresume_OBJECTS = \
@@ -98,18 +98,18 @@ _deps/curl-build/docs/examples/sftpuploadresume: /usr/lib/x86_64-linux-gnu/libcr
 _deps/curl-build/docs/examples/sftpuploadresume: /usr/lib/x86_64-linux-gnu/libz.so
 _deps/curl-build/docs/examples/sftpuploadresume: libpsl_src-install/lib/libpsl.a
 _deps/curl-build/docs/examples/sftpuploadresume: _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable sftpuploadresume"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-sftpuploadresume.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable sftpuploadresume"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-sftpuploadresume.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build: _deps/curl-build/docs/examples/sftpuploadresume
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-sftpuploadresume.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-sftpuploadresume.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/clean
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src/docs/examples /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build/docs/examples /home/vitaliy/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/depend
 

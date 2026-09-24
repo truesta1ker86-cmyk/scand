@@ -21,8 +21,8 @@
 # SPDX-License-Identifier: curl
 #
 ###########################################################################
-if(NOT EXISTS "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/install_manifest.txt")
+if(NOT EXISTS "/home/vitaliy/scand/build/_deps/curl-build/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/vitaliy/scand/build/_deps/curl-build/install_manifest.txt")
 endif()
 
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,7 +30,7 @@ if(NOT DEFINED CMAKE_INSTALL_PREFIX)
 endif()
 message(${CMAKE_INSTALL_PREFIX})
 
-file(READ "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/install_manifest.txt" _files)
+file(READ "/home/vitaliy/scand/build/_deps/curl-build/install_manifest.txt" _files)
 string(REGEX REPLACE "\n" ";" _files "${_files}")
 foreach(_file ${_files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${_file}")

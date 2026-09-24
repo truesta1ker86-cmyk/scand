@@ -4,6 +4,7 @@
 #include "webhook_store.hpp"
 #include <boost/beast.hpp>
 #include <boost/json.hpp>
+#include <atomic>
 #include <chrono>
 #include <iostream>
 #include <thread>
@@ -14,9 +15,6 @@ namespace net   = boost::asio;
 namespace json  = boost::json;
 using tcp = net::ip::tcp;
 
-// ---------------------------------------------------------------------------
-// Session — одно HTTP-соединение
-// ---------------------------------------------------------------------------
 class HttpSession : public std::enable_shared_from_this<HttpSession> {
     tcp::socket socket_;
     beast::flat_buffer buffer_;
@@ -41,7 +39,6 @@ private:
     }
 
     void handle_request() {
-        // --- CORS preflight ---
         if (request_.method() == http::verb::options) {
             auto res = std::make_shared<http::response<http::empty_body>>();
             res->version(request_.version());
@@ -60,15 +57,12 @@ private:
             return;
         }
 
-        // --- SSE-эндпоинт ---
         if (request_.method() == http::verb::get
-            && request_.target() == "/events/subscribe")
-        {
+            && request_.target() == "/events/subscribe") {
             handle_sse();
             return;
         }
 
-        // --- Обычная обработка через роутер ---
         Response r = router_.dispatch(request_.method(),
                                       std::string(request_.target()),
                                       request_);
@@ -89,7 +83,6 @@ private:
         } else {
             res->body() = json::serialize(r.body);
         }
-
         res->prepare_payload();
 
         auto self = shared_from_this();
@@ -100,10 +93,22 @@ private:
             });
     }
 
-    // -----------------------------------------------------------------------
-    // SSE: отдаём заголовки вручную (без Content-Length)
-    // -----------------------------------------------------------------------
+    // =========================================================================
+    // SSE: подключение
+    // =========================================================================
     void handle_sse() {
+        long long last_event_id = 0;
+        {
+            auto it = request_.find("Last-Event-ID");
+            if (it != request_.end()) {
+                try {
+                    last_event_id = std::stoll(std::string(it->value()));
+                } catch (...) {
+                    last_event_id = 0;
+                }
+            }
+        }
+
         auto headers = std::make_shared<std::string>();
         *headers += "HTTP/1.1 200 OK\r\n";
         *headers += "Server: 1C-Sync-Service\r\n";
@@ -115,9 +120,8 @@ private:
         *headers += "\r\n";
 
         auto self = shared_from_this();
-
         net::async_write(socket_, net::buffer(*headers),
-            [self, headers](beast::error_code ec, std::size_t) {
+            [self, headers, last_event_id](beast::error_code ec, std::size_t) {
                 if (ec) {
                     std::cerr << "[SSE] headers write error: "
                               << ec.message() << std::endl;
@@ -125,15 +129,18 @@ private:
                 }
 
                 auto sub = std::make_shared<SseSubscriber>(
-                    std::move(self->socket_),
-                    self
-                );
+                    std::move(self->socket_), self);
                 SseBroker::instance().add(sub);
 
                 std::cout << "[SSE] client connected (total "
-                          << SseBroker::instance().count() << ")" << std::endl;
+                          << SseBroker::instance().count()
+                          << ", last_event_id=" << last_event_id << ")"
+                          << std::endl;
 
-                // Начальное состояние
+                if (last_event_id > 0) {
+                    SseBroker::instance().replay_to(sub, last_event_id);
+                }
+
                 {
                     json::object init_body{
                         {"items", WebhookStore::instance().last(200)}
@@ -144,8 +151,6 @@ private:
                     sub->send(msg);
                 }
 
-                // Если сервис только что перезапустился и есть pending-сообщение
-                // о возобновлении — отправляем ТОЛЬКО ЭТОМУ клиенту.
                 if (auto pending = self->sync_.take_pending_resume()) {
                     json::object body{
                         {"source",    pending->source},
@@ -159,11 +164,9 @@ private:
                     *msg += "event: resumed\n";
                     *msg += "data: " + json::serialize(body) + "\n\n";
                     sub->send(msg);
-
                     std::cout << "[SSE] Sent pending resumed to client" << std::endl;
                 }
 
-                // Keep-alive каждые 15 секунд
                 std::thread([sub]() {
                     while (sub->is_open()) {
                         std::this_thread::sleep_for(std::chrono::seconds(15));
@@ -179,13 +182,11 @@ private:
     }
 };
 
-// ---------------------------------------------------------------------------
-// Listener
-// ---------------------------------------------------------------------------
 class HttpServer::Listener : public std::enable_shared_from_this<Listener> {
     tcp::acceptor acceptor_;
     const Router& router_;
     SyncService&  sync_;
+    std::atomic<bool> stopping_{false};
 
 public:
     Listener(net::io_context& ioc, tcp::endpoint endpoint,
@@ -198,35 +199,48 @@ public:
         do_accept();
     }
 
+    void stop_accepting() {
+        stopping_.store(true);
+        beast::error_code ec;
+        acceptor_.close(ec);
+    }
+
 private:
     void do_accept() {
+        if (stopping_.load()) return;
         auto self = shared_from_this();
         acceptor_.async_accept(
             [self](beast::error_code ec, tcp::socket socket) {
-                if (!ec) {
-                    std::make_shared<HttpSession>(std::move(socket),
-                                                  self->router_,
-                                                  self->sync_)->run();
+                if (ec == net::error::operation_aborted) return;
+                if (ec) {
+                    std::cerr << "[HTTP] accept error: " << ec.message() << "\n";
+                    return;
                 }
-                self->do_accept();
+                std::make_shared<HttpSession>(std::move(socket),
+                                              self->router_,
+                                              self->sync_)->run();
+                if (!self->stopping_.load()) self->do_accept();
             });
     }
 };
 
-// ---------------------------------------------------------------------------
-// HttpServer
-// ---------------------------------------------------------------------------
 HttpServer::HttpServer(net::io_context& ioc,
                        const std::string& address,
                        unsigned short port,
                        const Router& router,
                        SyncService& sync)
     : listener_(std::make_shared<Listener>(
-          ioc,
-          tcp::endpoint{net::ip::make_address(address), port},
-          router,
-          sync)) {}
+          ioc, tcp::endpoint{net::ip::make_address(address), port},
+          router, sync)) {}
 
-void HttpServer::start() {
-    listener_->run();
+void HttpServer::start() { listener_->run(); }
+
+void HttpServer::stop_accepting() {
+    std::cout << "[HTTP] stop_accepting\n";
+    listener_->stop_accepting();
+}
+
+void HttpServer::stop() {
+    stop_accepting();
+    SseBroker::instance().close_all();
 }

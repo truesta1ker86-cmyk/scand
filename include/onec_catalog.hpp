@@ -33,20 +33,23 @@ public:
                 std::string username,
                 std::string password,
                 int timeout_ms,
-                bool allow_insecure_http = false);
+                bool allow_insecure_http   = false,
+                bool allow_private_network = false);   // NEW
 
     struct RawResponse {
         long        status_code = 0;
         std::string body;
         std::string error;
         std::string url;
+
+        bool ok() const { return status_code >= 200 && status_code < 300; }
     };
 
     RawResponse read_raw(const std::string& path) const;
     std::string build_url(const std::string& path) const;
 
-    std::vector<std::string> read_all_pages(const OnecCatalogLimits& limits) const;
-    std::vector<OnecCatalogRow> read_all_rows(const OnecCatalogLimits& limits) const;
+    std::vector<std::string>    read_all_pages(const OnecCatalogLimits& limits) const;
+    std::vector<OnecCatalogRow> read_all_rows (const OnecCatalogLimits& limits) const;
 
     std::string read_raw_page(size_t skip, size_t top) const;
 
@@ -68,9 +71,14 @@ public:
 private:
     std::string read_page(size_t skip, size_t top) const;
 
+    // Общий конструктор OData-пути страницы.
+    std::string build_page_path(size_t skip, size_t top) const;
+
     std::string base_url_;
     std::string username_;
     std::string password_;
     int         timeout_ms_;
     std::string root_;
+    bool        allow_insecure_http_   = false;   // NEW
+    bool        allow_private_network_ = false;   // NEW
 };

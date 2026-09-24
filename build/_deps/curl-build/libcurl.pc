@@ -36,6 +36,6 @@ Version: 8.13.0
 Requires: 
 Requires.private: openssl,zlib,libpsl
 Libs: -L${libdir} -lcurl 
-Libs.private: -L/home/vitaliy/o1c_panel/scand/build/libpsl_src-install/lib -lssl -lcrypto -lz -lpsl
+Libs.private: -L/home/vitaliy/scand/build/libpsl_src-install/lib -lssl -lcrypto -lz -lpsl
 Cflags: -I${includedir} 
 Cflags.private: -DCURL_STATICLIB

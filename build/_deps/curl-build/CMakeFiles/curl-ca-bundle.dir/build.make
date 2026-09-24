@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Utility rule file for curl-ca-bundle.
 
@@ -67,8 +67,8 @@ include _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/compiler_depend.make
 include _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/progress.make
 
 _deps/curl-build/CMakeFiles/curl-ca-bundle: _deps/curl-src/scripts/mk-ca-bundle.pl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating a fresh ca-bundle.crt"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build && /usr/bin/perl /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/scripts/mk-ca-bundle.pl -b -l -u lib/ca-bundle.crt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating a fresh ca-bundle.crt"
+	cd /home/vitaliy/scand/build/_deps/curl-build && /usr/bin/perl /home/vitaliy/scand/build/_deps/curl-src/scripts/mk-ca-bundle.pl -b -l -u lib/ca-bundle.crt
 
 curl-ca-bundle: _deps/curl-build/CMakeFiles/curl-ca-bundle
 curl-ca-bundle: _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/build.make
@@ -79,10 +79,10 @@ _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/build: curl-ca-bundle
 .PHONY : _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/build
 
 _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build && $(CMAKE_COMMAND) -P CMakeFiles/curl-ca-bundle.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build && $(CMAKE_COMMAND) -P CMakeFiles/curl-ca-bundle.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/clean
 
 _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/CMakeFiles/curl-ca-bundle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build /home/vitaliy/scand/build/_deps/curl-build/CMakeFiles/curl-ca-bundle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/CMakeFiles/curl-ca-bundle.dir/depend
 

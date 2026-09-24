@@ -1,7 +1,7 @@
 _deps/zlib-build/CMakeFiles/zlib.dir/cpu_features.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/cpu_features.c \
+ /home/vitaliy/scand/build/_deps/zlib-src/cpu_features.c \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/zbuild.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/zbuild.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,8 +26,8 @@ _deps/zlib-build/CMakeFiles/zlib.dir/cpu_features.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/cpu_features.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/adler32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/crc32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/x86_features.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/fallback_builtins.h
+ /home/vitaliy/scand/build/_deps/zlib-src/cpu_features.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/adler32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/crc32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/x86_features.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/fallback_builtins.h

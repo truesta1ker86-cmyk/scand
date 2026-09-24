@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/response.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/response.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/response.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/response.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/response.h \
  /usr/include/c++/12/cassert \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -156,13 +156,13 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/response.cpp.o: \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cert_info.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cookies.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cert_info.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cookies.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
  /usr/include/c++/12/array /usr/include/c++/12/compare \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -188,14 +188,14 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/response.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/multi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/urlapi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/header.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/websockets.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/mprintf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/multi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/urlapi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/options.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/header.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/websockets.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/mprintf.h \
  /usr/include/c++/12/mutex /usr/include/c++/12/system_error \
  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
  /usr/include/c++/12/stdexcept /usr/include/c++/12/bits/chrono.h \
@@ -203,10 +203,10 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/response.cpp.o: \
  /usr/include/c++/12/ctime /usr/include/c++/12/bits/parse_numbers.h \
  /usr/include/c++/12/bits/std_mutex.h \
  /usr/include/c++/12/bits/unique_lock.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
  /usr/include/c++/12/chrono \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/bits/node_handle.h \
  /usr/include/c++/12/bits/stl_map.h \
@@ -214,13 +214,13 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/response.cpp.o: \
  /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/error.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/error.h \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h \
  /usr/include/c++/12/bits/enable_special_members.h \
  /usr/include/c++/12/bits/unordered_map.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/ssl_options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/filesystem.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/ssl_options.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/filesystem.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/bits/fs_path.h /usr/include/c++/12/locale \
  /usr/include/c++/12/bits/locale_classes.h \
@@ -247,19 +247,19 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/response.cpp.o: \
  /usr/include/c++/12/bits/istream.tcc \
  /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/codecvt \
  /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/util.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/util.h \
  /usr/include/c++/12/fstream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
  /usr/include/c++/12/bits/fstream.tcc \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/callback.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/callback.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
  /usr/include/c++/12/atomic /usr/include/c++/12/functional \
  /usr/include/c++/12/bits/std_function.h \
  /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \
  /usr/include/c++/12/bits/uniform_int_dist.h /usr/include/c++/12/optional \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/sse.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/util.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/sse.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/util.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h

@@ -1,7 +1,7 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/curlholder.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/curlholder.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/curlholder.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
  /usr/include/c++/12/array /usr/include/c++/12/compare \
  /usr/include/c++/12/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -31,9 +31,9 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/curlholder.cpp.o: \
  /usr/include/c++/12/bits/ptr_traits.h /usr/include/c++/12/debug/debug.h \
  /usr/include/c++/12/bits/predefined_ops.h \
  /usr/include/c++/12/bits/range_access.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -106,14 +106,14 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/curlholder.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/multi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/urlapi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/header.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/websockets.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/mprintf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/multi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/urlapi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/options.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/header.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/websockets.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/mprintf.h \
  /usr/include/c++/12/mutex /usr/include/c++/12/tuple \
  /usr/include/c++/12/bits/uses_allocator.h \
  /usr/include/c++/12/bits/invoke.h /usr/include/c++/12/exception \
@@ -181,7 +181,7 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/curlholder.cpp.o: \
  /usr/include/c++/12/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
  /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_uninitialized.h \
  /usr/include/c++/12/bits/stl_tempbuf.h \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
@@ -199,4 +199,4 @@ _deps/cpr-build/cpr/CMakeFiles/cpr.dir/curlholder.cpp.o: \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/cassert \
  /usr/include/assert.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h

@@ -10,7 +10,8 @@ public:
 };
 
 struct OnecUrlNormalizeOptions {
-    bool allow_insecure_http = false;
+    bool allow_insecure_http   = false;
+    bool allow_private_network = false;   // NEW: разрешить private IP (192.168/10/172.16-31)
 };
 
 // Нормализовать URL публикации 1С.

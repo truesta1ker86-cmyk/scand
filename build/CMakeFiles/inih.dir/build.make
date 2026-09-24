@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/inih.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/inih.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/inih.dir/flags.make
 
-CMakeFiles/inih.dir/third_party/inih/ini.c.o: CMakeFiles/inih.dir/flags.make
-CMakeFiles/inih.dir/third_party/inih/ini.c.o: /home/vitaliy/o1c_panel/scand/third_party/inih/ini.c
-CMakeFiles/inih.dir/third_party/inih/ini.c.o: CMakeFiles/inih.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/inih.dir/third_party/inih/ini.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/inih.dir/third_party/inih/ini.c.o -MF CMakeFiles/inih.dir/third_party/inih/ini.c.o.d -o CMakeFiles/inih.dir/third_party/inih/ini.c.o -c /home/vitaliy/o1c_panel/scand/third_party/inih/ini.c
+CMakeFiles/inih.dir/_deps/inih-src/ini.c.o: CMakeFiles/inih.dir/flags.make
+CMakeFiles/inih.dir/_deps/inih-src/ini.c.o: _deps/inih-src/ini.c
+CMakeFiles/inih.dir/_deps/inih-src/ini.c.o: CMakeFiles/inih.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/inih.dir/_deps/inih-src/ini.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/inih.dir/_deps/inih-src/ini.c.o -MF CMakeFiles/inih.dir/_deps/inih-src/ini.c.o.d -o CMakeFiles/inih.dir/_deps/inih-src/ini.c.o -c /home/vitaliy/scand/build/_deps/inih-src/ini.c
 
-CMakeFiles/inih.dir/third_party/inih/ini.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inih.dir/third_party/inih/ini.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/o1c_panel/scand/third_party/inih/ini.c > CMakeFiles/inih.dir/third_party/inih/ini.c.i
+CMakeFiles/inih.dir/_deps/inih-src/ini.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inih.dir/_deps/inih-src/ini.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/scand/build/_deps/inih-src/ini.c > CMakeFiles/inih.dir/_deps/inih-src/ini.c.i
 
-CMakeFiles/inih.dir/third_party/inih/ini.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inih.dir/third_party/inih/ini.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/o1c_panel/scand/third_party/inih/ini.c -o CMakeFiles/inih.dir/third_party/inih/ini.c.s
+CMakeFiles/inih.dir/_deps/inih-src/ini.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inih.dir/_deps/inih-src/ini.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/scand/build/_deps/inih-src/ini.c -o CMakeFiles/inih.dir/_deps/inih-src/ini.c.s
 
 # Object files for target inih
 inih_OBJECTS = \
-"CMakeFiles/inih.dir/third_party/inih/ini.c.o"
+"CMakeFiles/inih.dir/_deps/inih-src/ini.c.o"
 
 # External object files for target inih
 inih_EXTERNAL_OBJECTS =
 
-libinih.a: CMakeFiles/inih.dir/third_party/inih/ini.c.o
+libinih.a: CMakeFiles/inih.dir/_deps/inih-src/ini.c.o
 libinih.a: CMakeFiles/inih.dir/build.make
 libinih.a: CMakeFiles/inih.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libinih.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libinih.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/inih.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/inih.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/inih.dir/clean:
 .PHONY : CMakeFiles/inih.dir/clean
 
 CMakeFiles/inih.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/CMakeFiles/inih.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand /home/vitaliy/scand/build /home/vitaliy/scand/build /home/vitaliy/scand/build/CMakeFiles/inih.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/inih.dir/depend
 

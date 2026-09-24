@@ -1,8 +1,8 @@
 _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_vpclmulqdq.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/crc32_vpclmulqdq.c \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/crc32_vpclmulqdq.c \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/crc32_pclmulqdq_tpl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/crc32_pclmulqdq_tpl.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -113,11 +113,11 @@ _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_vpclmulqdq.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/keylockerintrin.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../crc32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../crc32_braid_p.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../zendian.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../crc32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../crc32_braid_p.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../zendian.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
  /usr/include/assert.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/crc32_fold_vpclmulqdq_tpl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/crc32_fold_pclmulqdq_tpl.h
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/crc32_fold_vpclmulqdq_tpl.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/crc32_fold_pclmulqdq_tpl.h

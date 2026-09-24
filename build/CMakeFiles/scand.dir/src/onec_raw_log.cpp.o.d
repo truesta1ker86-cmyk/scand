@@ -1,8 +1,7 @@
 CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: \
- /home/vitaliy/o1c_panel/scand/src/onec_raw_log.cpp \
- /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/include/onec_raw_log.hpp \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_algobase.h \
+ /home/vitaliy/scand/src/onec_raw_log.cpp /usr/include/stdc-predef.h \
+ /home/vitaliy/scand/include/onec_raw_log.hpp /usr/include/c++/12/deque \
+ /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -113,6 +112,7 @@ CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -120,6 +120,7 @@ CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
  /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \

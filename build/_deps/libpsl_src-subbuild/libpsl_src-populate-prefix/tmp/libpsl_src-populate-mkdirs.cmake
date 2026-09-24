@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-src"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-build"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/tmp"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-src"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-build"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/tmp"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src"
+  "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/vitaliy/scand/build/_deps/libpsl_src-subbuild/libpsl_src-populate-prefix/src/libpsl_src-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

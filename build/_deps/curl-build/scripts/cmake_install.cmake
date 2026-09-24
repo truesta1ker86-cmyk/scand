@@ -1,4 +1,4 @@
-# Install script for directory: /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/scripts
+# Install script for directory: /home/vitaliy/scand/build/_deps/curl-src/scripts
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

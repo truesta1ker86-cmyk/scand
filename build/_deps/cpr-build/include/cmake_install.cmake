@@ -1,4 +1,4 @@
-# Install script for directory: /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include
+# Install script for directory: /home/vitaliy/scand/build/_deps/cpr-src/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,10 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/vitaliy/scand/build/_deps/cpr-src/include/cpr")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/vitaliy/o1c_panel/scand/build/_deps/cpr-build/cpr_generated_includes/cpr")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/vitaliy/scand/build/_deps/cpr-build/cpr_generated_includes/cpr")
 endif()
 

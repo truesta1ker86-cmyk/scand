@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DCPR_CURL_USE_LIBPSL -DCPR_ENABLE_CURL_HTTP_ONLY -DCPR_ENABLE_SSL -DOPENSSL_BACKEND_USED -DPSL_STATIC=1 -Dcpr_EXPORTS
 
-CXX_INCLUDES = -I/home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include -I/home/vitaliy/o1c_panel/scand/build/_deps/cpr-build/cpr_generated_includes -I/home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include
+CXX_INCLUDES = -I/home/vitaliy/scand/build/_deps/cpr-src/include -I/home/vitaliy/scand/build/_deps/cpr-build/cpr_generated_includes -I/home/vitaliy/scand/build/_deps/curl-src/include
 
 CXX_FLAGS =  -Wall -Wextra -Wpedantic -Werror -O3 -DNDEBUG -fPIC -std=gnu++17
 

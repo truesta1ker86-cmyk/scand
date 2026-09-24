@@ -1,7 +1,7 @@
 _deps/zlib-build/CMakeFiles/zlib.dir/compare256.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/compare256.c \
+ /home/vitaliy/scand/build/_deps/zlib-src/compare256.c \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/zbuild.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/zbuild.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,15 +26,15 @@ _deps/zlib-build/CMakeFiles/zlib.dir/compare256.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/zutil_p.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/fallback_builtins.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/match_tpl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/deflate.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/zutil.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-build/zlib.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/zutil_p.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/fallback_builtins.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/match_tpl.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/deflate.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/zutil.h \
+ /home/vitaliy/scand/build/_deps/zlib-build/zlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-build/zconf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-build/zlib_name_mangling.h \
+ /home/vitaliy/scand/build/_deps/zlib-build/zconf.h \
+ /home/vitaliy/scand/build/_deps/zlib-build/zlib_name_mangling.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
@@ -52,7 +52,7 @@ _deps/zlib-build/CMakeFiles/zlib.dir/compare256.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/zendian.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/adler32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/crc32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/functable.h
+ /home/vitaliy/scand/build/_deps/zlib-src/zendian.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/adler32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/crc32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/functable.h

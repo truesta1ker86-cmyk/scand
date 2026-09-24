@@ -1,9 +1,7 @@
 CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
- /home/vitaliy/o1c_panel/scand/src/onec_catalog.cpp \
- /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/include/onec_catalog.hpp \
- /home/vitaliy/o1c_panel/scand/include/onec_types.hpp \
- /usr/include/c++/12/cstddef \
+ /home/vitaliy/scand/src/onec_catalog.cpp /usr/include/stdc-predef.h \
+ /home/vitaliy/scand/include/onec_catalog.hpp \
+ /home/vitaliy/scand/include/onec_types.hpp /usr/include/c++/12/cstddef \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -103,6 +101,7 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -110,9 +109,9 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/12/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/c++/12/cerrno \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
@@ -128,10 +127,10 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc \
- /home/vitaliy/o1c_panel/scand/include/onec_raw_log.hpp \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
- /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/mutex \
- /usr/include/c++/12/tuple /usr/include/c++/12/bits/uses_allocator.h \
+ /home/vitaliy/scand/include/onec_raw_log.hpp /usr/include/c++/12/deque \
+ /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
+ /usr/include/c++/12/mutex /usr/include/c++/12/tuple \
+ /usr/include/c++/12/bits/uses_allocator.h \
  /usr/include/c++/12/system_error \
  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
  /usr/include/c++/12/stdexcept /usr/include/c++/12/bits/chrono.h \
@@ -156,7 +155,8 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/c++/12/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /home/vitaliy/o1c_panel/scand/include/onec_url_normalizer.hpp \
+ /home/vitaliy/scand/include/onec_url_normalizer.hpp \
+ /home/vitaliy/scand/include/string_utils.hpp \
  /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \
@@ -405,8 +405,8 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/boost/describe/enum_from_string.hpp \
  /usr/include/boost/json/visit.hpp /usr/include/boost/json/impl/visit.hpp \
  /usr/include/c++/12/chrono \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cpr.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/api.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cpr.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/api.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
@@ -420,28 +420,28 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/c++/12/ext/concurrence.h \
  /usr/include/c++/12/bits/atomic_futex.h \
  /usr/include/c++/12/bits/std_thread.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/async.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/async_wrapper.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/async.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/async_wrapper.h \
  /usr/include/c++/12/memory \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
  /usr/include/c++/12/bits/shared_ptr_atomic.h \
  /usr/include/c++/12/backward/auto_ptr.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/singleton.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/threadpool.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/singleton.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/threadpool.h \
  /usr/include/c++/12/list /usr/include/c++/12/bits/stl_list.h \
  /usr/include/c++/12/bits/list.tcc /usr/include/c++/12/queue \
  /usr/include/c++/12/bits/stl_queue.h /usr/include/c++/12/thread \
  /usr/include/c++/12/bits/this_thread_sleep.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/async_wrapper.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/auth.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/util.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/callback.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/async_wrapper.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/auth.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/util.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/callback.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -459,28 +459,28 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/multi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/urlapi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/header.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/websockets.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/mprintf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/multi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/urlapi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/options.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/header.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/websockets.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/mprintf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/bits/stl_map.h \
  /usr/include/c++/12/bits/stl_multimap.h /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cookies.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/sse.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/bearer.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/filesystem.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cookies.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/curlholder.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/secure_string.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cprtypes.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/sse.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/bearer.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/filesystem.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/bits/fs_path.h /usr/include/c++/12/locale \
  /usr/include/c++/12/bits/locale_facets_nonio.h \
@@ -491,49 +491,49 @@ CMakeFiles/scand.dir/src/onec_catalog.cpp.o: \
  /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/sstream \
  /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/codecvt \
  /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/multipart.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/buffer.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/file.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/multiperform.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/curlmultiholder.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/response.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/cert_info.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/error.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/ssl_options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/util.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/session.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/accept_encoding.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/multipart.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/buffer.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/file.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/multiperform.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/curlmultiholder.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/response.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/cert_info.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/error.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/ssl_options.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/util.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/session.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/accept_encoding.h \
  /usr/include/c++/12/unordered_set \
  /usr/include/c++/12/bits/unordered_set.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/body.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/buffer.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/file.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/body_view.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/connect_timeout.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/timeout.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/connection_pool.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/http_version.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/interface.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/limit_rate.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/local_port.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/local_port_range.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/low_speed.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/parameters.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/curl_container.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/payload.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/proxies.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/proxyauth.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/range.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/redirect.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/reserve_size.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/resolve.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/body.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/buffer.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/file.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/body_view.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/connect_timeout.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/timeout.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/connection_pool.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/http_version.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/interface.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/limit_rate.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/local_port.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/local_port_range.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/low_speed.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/parameters.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/curl_container.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/payload.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/proxies.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/proxyauth.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/range.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/redirect.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/reserve_size.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/resolve.h \
  /usr/include/c++/12/set /usr/include/c++/12/bits/stl_set.h \
  /usr/include/c++/12/bits/stl_multiset.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/unix_socket.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/user_agent.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/verbose.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-build/cpr_generated_includes/cpr/cprver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/interceptor.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/ssl_ctx.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/status_codes.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/unix_socket.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/user_agent.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/verbose.h \
+ /home/vitaliy/scand/build/_deps/cpr-build/cpr_generated_includes/cpr/cprver.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/interceptor.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/ssl_ctx.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/status_codes.h \
  /usr/include/c++/12/iostream

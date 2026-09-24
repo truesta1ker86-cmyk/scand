@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-src"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-build"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/tmp"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src"
-  "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp"
+  "/home/vitaliy/scand/build/_deps/zlib-src"
+  "/home/vitaliy/scand/build/_deps/zlib-build"
+  "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix"
+  "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/tmp"
+  "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp"
+  "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src"
+  "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -1,27 +1,31 @@
 #pragma once
 #include "product.hpp"
+#include "result.hpp"
+#include "db_pool.hpp"
 #include "sync_checkpoint.hpp"
+#include <memory>
 #include <string>
 #include <vector>
 
 class DbRepository {
 public:
-    explicit DbRepository(std::string conn_str);
+    explicit DbRepository(std::shared_ptr<scand::db::ConnectionPool> pool);
 
-    void upsert_batch_1c(const std::vector<Product_1с>& products);
-    void upsert_one_1c(const Product_1с& product);
+    // 1С
+    scand::VoidResult upsert_batch_1c(const std::vector<Product1C>& products);
+    scand::VoidResult upsert_one_1c(const Product1C& product);
 
-    void upsert_batch_ozon(const std::vector<OzonProduct>& products);
-    void upsert_one_ozon(const OzonProduct& product);
+    // Ozon
+    scand::VoidResult upsert_batch_ozon(const std::vector<OzonProduct>& products);
+    scand::VoidResult upsert_one_ozon(const OzonProduct& product);
 
-    SyncCheckpoint load_checkpoint(const std::string& source);
-    void           save_checkpoint(const SyncCheckpoint& cp);
-    void           reset_checkpoint(const std::string& source);
-
-    // Обновить только статус (без курсора)
-    void update_checkpoint_status(const std::string& source,
-                                  const std::string& status);
+    // Чекпоинты
+    SyncCheckpoint    load_checkpoint(const std::string& source);
+    scand::VoidResult save_checkpoint(const SyncCheckpoint& cp);
+    scand::VoidResult reset_checkpoint(const std::string& source);
+    scand::VoidResult update_checkpoint_status(const std::string& source,
+                                               const std::string& status);
 
 private:
-    std::string conn_str_;
+    std::shared_ptr<scand::db::ConnectionPool> pool_;
 };

@@ -54,20 +54,3 @@ enum class SyncStage {
     Failed,
 };
 
-inline std::string stage_to_string(SyncStage s) {
-    switch (s) {
-        case SyncStage::Idle:              return "idle";
-        case SyncStage::Connecting:        return "connecting";
-        case SyncStage::FetchingTotal:     return "fetching_total";
-        case SyncStage::LoadingCheckpoint: return "loading_checkpoint";
-        case SyncStage::FetchingPage:      return "fetching_page";
-        case SyncStage::Parsing:           return "parsing";
-        case SyncStage::Saving:            return "saving";
-        case SyncStage::Retrying:          return "retrying";
-        case SyncStage::Finalizing:        return "finalizing";
-        case SyncStage::Done:              return "done";
-        case SyncStage::Stopped:           return "stopped";
-        case SyncStage::Failed:            return "failed";
-    }
-    return "unknown";
-}

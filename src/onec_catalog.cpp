@@ -1,6 +1,7 @@
 #include "onec_catalog.hpp"
 #include "onec_raw_log.hpp"
 #include "onec_url_normalizer.hpp"
+#include "string_utils.hpp"
 #include <algorithm>
 #include <atomic>
 #include <boost/json.hpp>
@@ -20,13 +21,17 @@ OnecCatalog::OnecCatalog(std::string base_url,
                          std::string username,
                          std::string password,
                          int timeout_ms,
-                         bool allow_insecure_http)
+                         bool allow_insecure_http,
+                         bool allow_private_network)     // NEW
     : username_(std::move(username))
     , password_(std::move(password))
     , timeout_ms_(timeout_ms)
+    , allow_insecure_http_(allow_insecure_http)          // NEW
+    , allow_private_network_(allow_private_network)      // NEW
 {
     OnecUrlNormalizeOptions opts;
-    opts.allow_insecure_http = allow_insecure_http;
+    opts.allow_insecure_http   = allow_insecure_http;
+    opts.allow_private_network = allow_private_network;  // NEW
 
     try {
         base_url_ = normalize_onec_publication_url(base_url, opts);
@@ -42,7 +47,9 @@ OnecCatalog::OnecCatalog(std::string base_url,
     std::ostringstream oss;
     oss << "INIT: root=" << root_
         << " user=" << username_
-        << " timeout=" << timeout_ms_ << "ms";
+        << " timeout=" << timeout_ms_ << "ms"
+        << " allow_insecure_http=" << allow_insecure_http_
+        << " allow_private_network=" << allow_private_network_;
     OnecRawLog::instance().add(oss.str());
 }
 
@@ -50,6 +57,22 @@ std::string OnecCatalog::build_url(const std::string& path) const {
     if (path.empty()) return root_;
     if (path.front() == '/') return root_ + path;
     return root_ + "/" + path;
+}
+
+// ---------------------------------------------------------------------------
+// Общий конструктор OData-пути страницы (устраняет дублирование)
+// ---------------------------------------------------------------------------
+std::string OnecCatalog::build_page_path(size_t skip, size_t top) const {
+    if (top > 500) top = 500;
+
+    return std::string("/Catalog_Номенклатура")
+         + "?$format=json"
+         + "&$top="    + std::to_string(top)
+         + "&$skip="   + std::to_string(skip)
+         + "&$select=Ref_Key,Code,Артикул,Description,НаименованиеПолное,"
+           "IsFolder,DeletionMark,Parent_Key,ЕдиницаИзмерения_Key,"
+           "СтавкаНДС_Key,ВесЧислитель,ВесЗнаменатель"
+         + "&$orderby=Code";
 }
 
 // ---------------------------------------------------------------------------
@@ -65,8 +88,7 @@ OnecCatalog::RawResponse OnecCatalog::read_raw(const std::string& path) const {
         cpr::Authentication{username_, password_, cpr::AuthMode::BASIC},
         cpr::Header{{"Accept", "application/json"},
                     {"User-Agent", "O1-Control/1C-Catalog-ReadOnly"}},
-        cpr::Timeout{timeout_ms_}
-    );
+        cpr::Timeout{timeout_ms_});
 
     result.status_code = r.status_code;
     result.body        = r.text;
@@ -78,32 +100,23 @@ OnecCatalog::RawResponse OnecCatalog::read_raw(const std::string& path) const {
 // Низкоуровневое чтение одной страницы (без retry)
 // ---------------------------------------------------------------------------
 std::string OnecCatalog::read_page(size_t skip, size_t top) const {
-    if (top > 500) top = 500;
+    std::string path = build_page_path(skip, top);
+    std::string url  = build_url(path);
 
-    std::string path =
-        "/Catalog_Номенклатура"
-        "?$format=json"
-        "&$top=" + std::to_string(top) +
-        "&$skip=" + std::to_string(skip) +
-        "&$select=Ref_Key,Code,Артикул,Description,НаименованиеПолное,IsFolder,DeletionMark,Parent_Key,ЕдиницаИзмерения_Key,СтавкаНДС_Key,ВесЧислитель,ВесЗнаменатель"
-        "&$orderby=Code";
-
-    std::string url = build_url(path);
-    int effective_timeout = std::max(timeout_ms_, 120000);
+    int effective_timeout = timeout_ms_;
+    if (effective_timeout <= 0) effective_timeout = 10000;
 
     cpr::Response r = cpr::Get(
         cpr::Url{url},
         cpr::Authentication{username_, password_, cpr::AuthMode::BASIC},
         cpr::Header{{"Accept", "application/json"},
                     {"User-Agent", "O1-Control/1C-Catalog-ReadOnly"}},
-        cpr::Timeout{effective_timeout}
-    );
+        cpr::Timeout{effective_timeout});
 
     if (r.status_code != 200) {
         throw std::runtime_error(
             "1C HTTP " + std::to_string(r.status_code) +
-            ": " + r.text.substr(0, 300)
-        );
+            ": " + r.text.substr(0, 300));
     }
     return r.text;
 }
@@ -113,7 +126,7 @@ std::string OnecCatalog::read_raw_page(size_t skip, size_t top) const {
 }
 
 // ---------------------------------------------------------------------------
-// Чтение страницы с retry + агрессивная остановка
+// Чтение страницы с retry + агрессивная остановка.
 // ---------------------------------------------------------------------------
 OnecPageResult OnecCatalog::read_page_with_retry(
     size_t skip, size_t top,
@@ -124,16 +137,12 @@ OnecPageResult OnecCatalog::read_page_with_retry(
     OnecPageResult result;
     if (top > 500) top = 500;
 
-    std::string path =
-        "/Catalog_Номенклатура"
-        "?$format=json"
-        "&$top=" + std::to_string(top) +
-        "&$skip=" + std::to_string(skip) +
-        "&$select=Ref_Key,Code,Артикул,Description,НаименованиеПолное,IsFolder,DeletionMark,Parent_Key,ЕдиницаИзмерения_Key,СтавкаНДС_Key,ВесЧислитель,ВесЗнаменатель"
-        "&$orderby=Code";
+    std::string path = build_page_path(skip, top);
+    std::string url  = build_url(path);
 
-    std::string url = build_url(path);
-    int effective_timeout = std::max(timeout_ms_, 120000);
+    int effective_timeout = timeout_ms_;
+    if (effective_timeout <= 0) effective_timeout = 10000;
+
     int delay_ms = base_delay_ms;
 
     for (int attempt = 1; attempt <= max_attempts; ++attempt) {
@@ -150,21 +159,6 @@ OnecPageResult OnecCatalog::read_page_with_retry(
             return result;
         }
 
-        // Watcher: копирует внешний флаг в локальный каждые 50 мс
-        std::atomic<bool> local_cancel{false};
-        std::atomic<bool> watcher_run{true};
-
-        std::thread watcher([&]() {
-            while (watcher_run.load()) {
-                if ((abort_flag && abort_flag->load()) ||
-                    (external_stop && external_stop->load())) {
-                    local_cancel.store(true);
-                    return;
-                }
-                std::this_thread::sleep_for(std::chrono::milliseconds(50));
-            }
-        });
-
         cpr::Session session;
         session.SetUrl(cpr::Url{url});
         session.SetAuth(cpr::Authentication{
@@ -174,15 +168,12 @@ OnecPageResult OnecCatalog::read_page_with_retry(
             {"User-Agent", "O1-Control/1C-Catalog-ReadOnly"}});
         session.SetTimeout(cpr::Timeout{effective_timeout});
 
-        // Low speed: если данных нет > 2 сек — прерываем
         session.SetLowSpeed(cpr::LowSpeed{1, 2});
 
-        // Progress callback: прерывает на каждом чанке данных
         session.SetProgressCallback(cpr::ProgressCallback(
             [&](cpr::cpr_pf_arg_t, cpr::cpr_pf_arg_t,
                 cpr::cpr_pf_arg_t, cpr::cpr_pf_arg_t,
                 intptr_t) -> bool {
-                if (local_cancel.load())                       return false;
                 if (abort_flag && abort_flag->load())          return false;
                 if (external_stop && external_stop->load())    return false;
                 return true;
@@ -190,11 +181,6 @@ OnecPageResult OnecCatalog::read_page_with_retry(
 
         cpr::Response r = session.Get();
 
-        // Останавливаем watcher
-        watcher_run.store(false);
-        if (watcher.joinable()) watcher.join();
-
-        // Проверяем флаги после запроса
         if (external_stop && external_stop->load()) {
             result.kind  = OnecErrorKind::Fatal;
             result.error = "stopped by user";
@@ -208,7 +194,7 @@ OnecPageResult OnecCatalog::read_page_with_retry(
 
         result.http_status = r.status_code;
 
-        if (r.status_code == 200) {
+        if (r.status_code >= 200 && r.status_code < 300) {
             try {
                 auto test = json::parse(r.text);
                 (void)test;
@@ -220,25 +206,15 @@ OnecPageResult OnecCatalog::read_page_with_retry(
                 OnecRawLog::instance().add(
                     "RETRY attempt=" + std::to_string(attempt) +
                     " skip=" + std::to_string(skip) +
-                    " JSON invalid: " + e.what()
-                );
+                    " JSON invalid: " + e.what());
             }
         }
         else if (r.status_code == 0) {
             result.error = "network error: " + r.error.message;
-
-            // Если прервали по флагу — прекращаем, не retry
-            if (local_cancel.load()) {
-                result.kind  = OnecErrorKind::Fatal;
-                result.error = "stopped by user";
-                return result;
-            }
-
             OnecRawLog::instance().add(
                 "RETRY attempt=" + std::to_string(attempt) +
                 " skip=" + std::to_string(skip) +
-                " network: " + r.error.message
-            );
+                " network: " + r.error.message);
         }
         else if (r.status_code == 429 || r.status_code == 503) {
             result.error = "rate limit: " + std::to_string(r.status_code);
@@ -248,13 +224,12 @@ OnecPageResult OnecCatalog::read_page_with_retry(
             result.error = "server error: " + std::to_string(r.status_code);
         }
         else {
-            result.kind = OnecErrorKind::Fatal;
+            result.kind  = OnecErrorKind::Fatal;
             result.error = "HTTP " + std::to_string(r.status_code) +
                            ": " + r.text.substr(0, 300);
             return result;
         }
 
-        // Backoff с проверкой каждые 50 мс
         if (attempt < max_attempts) {
             auto sleep_end = std::chrono::steady_clock::now()
                            + std::chrono::milliseconds(delay_ms);
@@ -278,13 +253,12 @@ OnecPageResult OnecCatalog::read_page_with_retry(
     result.kind = OnecErrorKind::Retryable;
     OnecRawLog::instance().add(
         "FAILED skip=" + std::to_string(skip) +
-        " after " + std::to_string(max_attempts) + " attempts"
-    );
+        " after " + std::to_string(max_attempts) + " attempts");
     return result;
 }
 
 // ---------------------------------------------------------------------------
-// Вспомогательные
+// Вспомогательные: парсинг
 // ---------------------------------------------------------------------------
 namespace {
 
@@ -306,13 +280,17 @@ std::vector<OnecCatalogRow> parse_rows_impl(const std::string& json_text) {
     auto data = json::parse(json_text);
 
     const json::array* items = nullptr;
-    if (data.is_object() && data.as_object().contains("value"))
-        items = &data.as_object().at("value").as_array();
-    else if (data.is_array())
+    if (data.is_object()) {
+        auto it = data.as_object().find("value");
+        if (it != data.as_object().end() && it->value().is_array())
+            items = &it->value().as_array();
+    } else if (data.is_array()) {
         items = &data.as_array();
+    }
 
     if (!items) return rows;
 
+    rows.reserve(items->size());
     for (const auto& item : *items) {
         if (!item.is_object()) continue;
         const auto& obj = item.as_object();
@@ -346,7 +324,7 @@ std::vector<OnecCatalogRow> OnecCatalog::parse_rows_static(
 }
 
 // ---------------------------------------------------------------------------
-// Общее количество записей — три варианта
+// Общее количество записей — три варианта OData
 // ---------------------------------------------------------------------------
 std::optional<size_t> OnecCatalog::read_total_count() const {
     for (int variant = 1; variant <= 3; ++variant) {
@@ -371,8 +349,7 @@ std::optional<size_t> OnecCatalog::read_total_count() const {
             cpr::Authentication{username_, password_, cpr::AuthMode::BASIC},
             cpr::Header{{"Accept", "application/json"},
                         {"User-Agent", "O1-Control/1C-Catalog-ReadOnly"}},
-            cpr::Timeout{timeout_ms_}
-        );
+            cpr::Timeout{timeout_ms_});
 
         if (r.status_code != 200) continue;
 
@@ -395,7 +372,10 @@ std::optional<size_t> OnecCatalog::read_total_count() const {
                     catch (...) {}
                 }
             }
-        } catch (...) {}
+        } catch (const std::exception& e) {
+            OnecRawLog::instance().add(
+                std::string("COUNT parse: ") + e.what());
+        }
     }
     return std::nullopt;
 }
@@ -407,11 +387,16 @@ std::vector<std::string> OnecCatalog::read_all_pages(
     const OnecCatalogLimits& limits) const
 {
     std::vector<std::string> pages;
-    for (size_t offset = 0; offset < limits.max_rows; offset += limits.page_size) {
-        std::string page_json = read_page(offset, limits.page_size);
-        auto rows = parse_rows_impl(page_json);
-        pages.push_back(page_json);
-        if (rows.size() < limits.page_size) return pages;
+    size_t offset = 0;
+    while (offset < limits.max_rows) {
+        size_t remaining = limits.max_rows - offset;
+        size_t this_page = std::min(limits.page_size, remaining);
+
+        std::string page_json = read_page(offset, this_page);
+        if (page_json.empty()) break;
+        pages.push_back(std::move(page_json));
+
+        offset += this_page;
     }
     return pages;
 }
@@ -419,13 +404,22 @@ std::vector<std::string> OnecCatalog::read_all_pages(
 std::vector<OnecCatalogRow> OnecCatalog::read_all_rows(
     const OnecCatalogLimits& limits) const
 {
-    auto pages = read_all_pages(limits);
     std::vector<OnecCatalogRow> all;
-    for (const auto& p : pages) {
-        auto rows = parse_rows_impl(p);
+    size_t offset = 0;
+    while (offset < limits.max_rows) {
+        size_t remaining = limits.max_rows - offset;
+        size_t this_page = std::min(limits.page_size, remaining);
+
+        std::string page_json = read_page(offset, this_page);
+        auto rows = parse_rows_impl(page_json);
+        if (rows.empty()) break;
+
         all.insert(all.end(),
                    std::make_move_iterator(rows.begin()),
                    std::make_move_iterator(rows.end()));
+
+        if (rows.size() < this_page) break;
+        offset += rows.size();
     }
     return all;
 }

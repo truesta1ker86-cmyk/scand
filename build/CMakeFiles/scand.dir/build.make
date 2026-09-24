@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/scand.dir/depend.make
@@ -69,378 +69,522 @@ include CMakeFiles/scand.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/scand.dir/flags.make
 
+CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o: /home/vitaliy/scand/src/allowed_warehouse_repository.cpp
+CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o -MF CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o.d -o CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o -c /home/vitaliy/scand/src/allowed_warehouse_repository.cpp
+
+CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/allowed_warehouse_repository.cpp > CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.i
+
+CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/allowed_warehouse_repository.cpp -o CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.s
+
 CMakeFiles/scand.dir/src/config.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/config.cpp.o: /home/vitaliy/o1c_panel/scand/src/config.cpp
+CMakeFiles/scand.dir/src/config.cpp.o: /home/vitaliy/scand/src/config.cpp
 CMakeFiles/scand.dir/src/config.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scand.dir/src/config.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/config.cpp.o -MF CMakeFiles/scand.dir/src/config.cpp.o.d -o CMakeFiles/scand.dir/src/config.cpp.o -c /home/vitaliy/o1c_panel/scand/src/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scand.dir/src/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/config.cpp.o -MF CMakeFiles/scand.dir/src/config.cpp.o.d -o CMakeFiles/scand.dir/src/config.cpp.o -c /home/vitaliy/scand/src/config.cpp
 
 CMakeFiles/scand.dir/src/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/config.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/config.cpp > CMakeFiles/scand.dir/src/config.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/config.cpp > CMakeFiles/scand.dir/src/config.cpp.i
 
 CMakeFiles/scand.dir/src/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/config.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/config.cpp -o CMakeFiles/scand.dir/src/config.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/config.cpp -o CMakeFiles/scand.dir/src/config.cpp.s
 
 CMakeFiles/scand.dir/src/db_repository.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/db_repository.cpp.o: /home/vitaliy/o1c_panel/scand/src/db_repository.cpp
+CMakeFiles/scand.dir/src/db_repository.cpp.o: /home/vitaliy/scand/src/db_repository.cpp
 CMakeFiles/scand.dir/src/db_repository.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scand.dir/src/db_repository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/db_repository.cpp.o -MF CMakeFiles/scand.dir/src/db_repository.cpp.o.d -o CMakeFiles/scand.dir/src/db_repository.cpp.o -c /home/vitaliy/o1c_panel/scand/src/db_repository.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scand.dir/src/db_repository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/db_repository.cpp.o -MF CMakeFiles/scand.dir/src/db_repository.cpp.o.d -o CMakeFiles/scand.dir/src/db_repository.cpp.o -c /home/vitaliy/scand/src/db_repository.cpp
 
 CMakeFiles/scand.dir/src/db_repository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/db_repository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/db_repository.cpp > CMakeFiles/scand.dir/src/db_repository.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/db_repository.cpp > CMakeFiles/scand.dir/src/db_repository.cpp.i
 
 CMakeFiles/scand.dir/src/db_repository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/db_repository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/db_repository.cpp -o CMakeFiles/scand.dir/src/db_repository.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/db_repository.cpp -o CMakeFiles/scand.dir/src/db_repository.cpp.s
 
 CMakeFiles/scand.dir/src/handlers.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/handlers.cpp.o: /home/vitaliy/o1c_panel/scand/src/handlers.cpp
+CMakeFiles/scand.dir/src/handlers.cpp.o: /home/vitaliy/scand/src/handlers.cpp
 CMakeFiles/scand.dir/src/handlers.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scand.dir/src/handlers.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/handlers.cpp.o -MF CMakeFiles/scand.dir/src/handlers.cpp.o.d -o CMakeFiles/scand.dir/src/handlers.cpp.o -c /home/vitaliy/o1c_panel/scand/src/handlers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scand.dir/src/handlers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/handlers.cpp.o -MF CMakeFiles/scand.dir/src/handlers.cpp.o.d -o CMakeFiles/scand.dir/src/handlers.cpp.o -c /home/vitaliy/scand/src/handlers.cpp
 
 CMakeFiles/scand.dir/src/handlers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/handlers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/handlers.cpp > CMakeFiles/scand.dir/src/handlers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/handlers.cpp > CMakeFiles/scand.dir/src/handlers.cpp.i
 
 CMakeFiles/scand.dir/src/handlers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/handlers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/handlers.cpp -o CMakeFiles/scand.dir/src/handlers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/handlers.cpp -o CMakeFiles/scand.dir/src/handlers.cpp.s
 
 CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: /home/vitaliy/o1c_panel/scand/src/hooks_handlers.cpp
+CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: /home/vitaliy/scand/src/hooks_handlers.cpp
 CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scand.dir/src/hooks_handlers.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/hooks_handlers.cpp.o -MF CMakeFiles/scand.dir/src/hooks_handlers.cpp.o.d -o CMakeFiles/scand.dir/src/hooks_handlers.cpp.o -c /home/vitaliy/o1c_panel/scand/src/hooks_handlers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scand.dir/src/hooks_handlers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/hooks_handlers.cpp.o -MF CMakeFiles/scand.dir/src/hooks_handlers.cpp.o.d -o CMakeFiles/scand.dir/src/hooks_handlers.cpp.o -c /home/vitaliy/scand/src/hooks_handlers.cpp
 
 CMakeFiles/scand.dir/src/hooks_handlers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/hooks_handlers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/hooks_handlers.cpp > CMakeFiles/scand.dir/src/hooks_handlers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/hooks_handlers.cpp > CMakeFiles/scand.dir/src/hooks_handlers.cpp.i
 
 CMakeFiles/scand.dir/src/hooks_handlers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/hooks_handlers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/hooks_handlers.cpp -o CMakeFiles/scand.dir/src/hooks_handlers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/hooks_handlers.cpp -o CMakeFiles/scand.dir/src/hooks_handlers.cpp.s
 
 CMakeFiles/scand.dir/src/http_server.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/http_server.cpp.o: /home/vitaliy/o1c_panel/scand/src/http_server.cpp
+CMakeFiles/scand.dir/src/http_server.cpp.o: /home/vitaliy/scand/src/http_server.cpp
 CMakeFiles/scand.dir/src/http_server.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scand.dir/src/http_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/http_server.cpp.o -MF CMakeFiles/scand.dir/src/http_server.cpp.o.d -o CMakeFiles/scand.dir/src/http_server.cpp.o -c /home/vitaliy/o1c_panel/scand/src/http_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scand.dir/src/http_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/http_server.cpp.o -MF CMakeFiles/scand.dir/src/http_server.cpp.o.d -o CMakeFiles/scand.dir/src/http_server.cpp.o -c /home/vitaliy/scand/src/http_server.cpp
 
 CMakeFiles/scand.dir/src/http_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/http_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/http_server.cpp > CMakeFiles/scand.dir/src/http_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/http_server.cpp > CMakeFiles/scand.dir/src/http_server.cpp.i
 
 CMakeFiles/scand.dir/src/http_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/http_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/http_server.cpp -o CMakeFiles/scand.dir/src/http_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/http_server.cpp -o CMakeFiles/scand.dir/src/http_server.cpp.s
+
+CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o: /home/vitaliy/scand/src/inventory_checkpoint_repository.cpp
+CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o -MF CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o.d -o CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o -c /home/vitaliy/scand/src/inventory_checkpoint_repository.cpp
+
+CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/inventory_checkpoint_repository.cpp > CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.i
+
+CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/inventory_checkpoint_repository.cpp -o CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.s
+
+CMakeFiles/scand.dir/src/inventory_preview.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/inventory_preview.cpp.o: /home/vitaliy/scand/src/inventory_preview.cpp
+CMakeFiles/scand.dir/src/inventory_preview.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scand.dir/src/inventory_preview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/inventory_preview.cpp.o -MF CMakeFiles/scand.dir/src/inventory_preview.cpp.o.d -o CMakeFiles/scand.dir/src/inventory_preview.cpp.o -c /home/vitaliy/scand/src/inventory_preview.cpp
+
+CMakeFiles/scand.dir/src/inventory_preview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/inventory_preview.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/inventory_preview.cpp > CMakeFiles/scand.dir/src/inventory_preview.cpp.i
+
+CMakeFiles/scand.dir/src/inventory_preview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/inventory_preview.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/inventory_preview.cpp -o CMakeFiles/scand.dir/src/inventory_preview.cpp.s
+
+CMakeFiles/scand.dir/src/inventory_repository.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/inventory_repository.cpp.o: /home/vitaliy/scand/src/inventory_repository.cpp
+CMakeFiles/scand.dir/src/inventory_repository.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scand.dir/src/inventory_repository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/inventory_repository.cpp.o -MF CMakeFiles/scand.dir/src/inventory_repository.cpp.o.d -o CMakeFiles/scand.dir/src/inventory_repository.cpp.o -c /home/vitaliy/scand/src/inventory_repository.cpp
+
+CMakeFiles/scand.dir/src/inventory_repository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/inventory_repository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/inventory_repository.cpp > CMakeFiles/scand.dir/src/inventory_repository.cpp.i
+
+CMakeFiles/scand.dir/src/inventory_repository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/inventory_repository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/inventory_repository.cpp -o CMakeFiles/scand.dir/src/inventory_repository.cpp.s
 
 CMakeFiles/scand.dir/src/main.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/main.cpp.o: /home/vitaliy/o1c_panel/scand/src/main.cpp
+CMakeFiles/scand.dir/src/main.cpp.o: /home/vitaliy/scand/src/main.cpp
 CMakeFiles/scand.dir/src/main.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scand.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/main.cpp.o -MF CMakeFiles/scand.dir/src/main.cpp.o.d -o CMakeFiles/scand.dir/src/main.cpp.o -c /home/vitaliy/o1c_panel/scand/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scand.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/main.cpp.o -MF CMakeFiles/scand.dir/src/main.cpp.o.d -o CMakeFiles/scand.dir/src/main.cpp.o -c /home/vitaliy/scand/src/main.cpp
 
 CMakeFiles/scand.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/main.cpp > CMakeFiles/scand.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/main.cpp > CMakeFiles/scand.dir/src/main.cpp.i
 
 CMakeFiles/scand.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/main.cpp -o CMakeFiles/scand.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/main.cpp -o CMakeFiles/scand.dir/src/main.cpp.s
 
 CMakeFiles/scand.dir/src/notifier.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/notifier.cpp.o: /home/vitaliy/o1c_panel/scand/src/notifier.cpp
+CMakeFiles/scand.dir/src/notifier.cpp.o: /home/vitaliy/scand/src/notifier.cpp
 CMakeFiles/scand.dir/src/notifier.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scand.dir/src/notifier.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/notifier.cpp.o -MF CMakeFiles/scand.dir/src/notifier.cpp.o.d -o CMakeFiles/scand.dir/src/notifier.cpp.o -c /home/vitaliy/o1c_panel/scand/src/notifier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/scand.dir/src/notifier.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/notifier.cpp.o -MF CMakeFiles/scand.dir/src/notifier.cpp.o.d -o CMakeFiles/scand.dir/src/notifier.cpp.o -c /home/vitaliy/scand/src/notifier.cpp
 
 CMakeFiles/scand.dir/src/notifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/notifier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/notifier.cpp > CMakeFiles/scand.dir/src/notifier.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/notifier.cpp > CMakeFiles/scand.dir/src/notifier.cpp.i
 
 CMakeFiles/scand.dir/src/notifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/notifier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/notifier.cpp -o CMakeFiles/scand.dir/src/notifier.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/notifier.cpp -o CMakeFiles/scand.dir/src/notifier.cpp.s
 
 CMakeFiles/scand.dir/src/onec_catalog.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_catalog.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_catalog.cpp
+CMakeFiles/scand.dir/src/onec_catalog.cpp.o: /home/vitaliy/scand/src/onec_catalog.cpp
 CMakeFiles/scand.dir/src/onec_catalog.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scand.dir/src/onec_catalog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_catalog.cpp.o -MF CMakeFiles/scand.dir/src/onec_catalog.cpp.o.d -o CMakeFiles/scand.dir/src/onec_catalog.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_catalog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/scand.dir/src/onec_catalog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_catalog.cpp.o -MF CMakeFiles/scand.dir/src/onec_catalog.cpp.o.d -o CMakeFiles/scand.dir/src/onec_catalog.cpp.o -c /home/vitaliy/scand/src/onec_catalog.cpp
 
 CMakeFiles/scand.dir/src/onec_catalog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_catalog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_catalog.cpp > CMakeFiles/scand.dir/src/onec_catalog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_catalog.cpp > CMakeFiles/scand.dir/src/onec_catalog.cpp.i
 
 CMakeFiles/scand.dir/src/onec_catalog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_catalog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_catalog.cpp -o CMakeFiles/scand.dir/src/onec_catalog.cpp.s
-
-CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_catalog_sync.cpp
-CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o -MF CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o.d -o CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_catalog_sync.cpp
-
-CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_catalog_sync.cpp > CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.i
-
-CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_catalog_sync.cpp -o CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_catalog.cpp -o CMakeFiles/scand.dir/src/onec_catalog.cpp.s
 
 CMakeFiles/scand.dir/src/onec_client.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_client.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_client.cpp
+CMakeFiles/scand.dir/src/onec_client.cpp.o: /home/vitaliy/scand/src/onec_client.cpp
 CMakeFiles/scand.dir/src/onec_client.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scand.dir/src/onec_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_client.cpp.o -MF CMakeFiles/scand.dir/src/onec_client.cpp.o.d -o CMakeFiles/scand.dir/src/onec_client.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/scand.dir/src/onec_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_client.cpp.o -MF CMakeFiles/scand.dir/src/onec_client.cpp.o.d -o CMakeFiles/scand.dir/src/onec_client.cpp.o -c /home/vitaliy/scand/src/onec_client.cpp
 
 CMakeFiles/scand.dir/src/onec_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_client.cpp > CMakeFiles/scand.dir/src/onec_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_client.cpp > CMakeFiles/scand.dir/src/onec_client.cpp.i
 
 CMakeFiles/scand.dir/src/onec_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_client.cpp -o CMakeFiles/scand.dir/src/onec_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_client.cpp -o CMakeFiles/scand.dir/src/onec_client.cpp.s
+
+CMakeFiles/scand.dir/src/onec_inventory.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/onec_inventory.cpp.o: /home/vitaliy/scand/src/onec_inventory.cpp
+CMakeFiles/scand.dir/src/onec_inventory.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/scand.dir/src/onec_inventory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_inventory.cpp.o -MF CMakeFiles/scand.dir/src/onec_inventory.cpp.o.d -o CMakeFiles/scand.dir/src/onec_inventory.cpp.o -c /home/vitaliy/scand/src/onec_inventory.cpp
+
+CMakeFiles/scand.dir/src/onec_inventory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_inventory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_inventory.cpp > CMakeFiles/scand.dir/src/onec_inventory.cpp.i
+
+CMakeFiles/scand.dir/src/onec_inventory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_inventory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_inventory.cpp -o CMakeFiles/scand.dir/src/onec_inventory.cpp.s
+
+CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o: /home/vitaliy/scand/src/onec_ka2_inventory.cpp
+CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o -MF CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o.d -o CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o -c /home/vitaliy/scand/src/onec_ka2_inventory.cpp
+
+CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_ka2_inventory.cpp > CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.i
+
+CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_ka2_inventory.cpp -o CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.s
+
+CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o: /home/vitaliy/scand/src/onec_odata_preflight.cpp
+CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o -MF CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o.d -o CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o -c /home/vitaliy/scand/src/onec_odata_preflight.cpp
+
+CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_odata_preflight.cpp > CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.i
+
+CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_odata_preflight.cpp -o CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.s
+
+CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o: /home/vitaliy/scand/src/onec_product_catalog.cpp
+CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o -MF CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o.d -o CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o -c /home/vitaliy/scand/src/onec_product_catalog.cpp
+
+CMakeFiles/scand.dir/src/onec_product_catalog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_product_catalog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_product_catalog.cpp > CMakeFiles/scand.dir/src/onec_product_catalog.cpp.i
+
+CMakeFiles/scand.dir/src/onec_product_catalog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_product_catalog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_product_catalog.cpp -o CMakeFiles/scand.dir/src/onec_product_catalog.cpp.s
 
 CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_product_mapper.cpp
+CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o: /home/vitaliy/scand/src/onec_product_mapper.cpp
 CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o -MF CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o.d -o CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_product_mapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o -MF CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o.d -o CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o -c /home/vitaliy/scand/src/onec_product_mapper.cpp
 
 CMakeFiles/scand.dir/src/onec_product_mapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_product_mapper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_product_mapper.cpp > CMakeFiles/scand.dir/src/onec_product_mapper.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_product_mapper.cpp > CMakeFiles/scand.dir/src/onec_product_mapper.cpp.i
 
 CMakeFiles/scand.dir/src/onec_product_mapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_product_mapper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_product_mapper.cpp -o CMakeFiles/scand.dir/src/onec_product_mapper.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_product_mapper.cpp -o CMakeFiles/scand.dir/src/onec_product_mapper.cpp.s
 
 CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_raw_log.cpp
+CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: /home/vitaliy/scand/src/onec_raw_log.cpp
 CMakeFiles/scand.dir/src/onec_raw_log.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/scand.dir/src/onec_raw_log.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_raw_log.cpp.o -MF CMakeFiles/scand.dir/src/onec_raw_log.cpp.o.d -o CMakeFiles/scand.dir/src/onec_raw_log.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_raw_log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/scand.dir/src/onec_raw_log.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_raw_log.cpp.o -MF CMakeFiles/scand.dir/src/onec_raw_log.cpp.o.d -o CMakeFiles/scand.dir/src/onec_raw_log.cpp.o -c /home/vitaliy/scand/src/onec_raw_log.cpp
 
 CMakeFiles/scand.dir/src/onec_raw_log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_raw_log.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_raw_log.cpp > CMakeFiles/scand.dir/src/onec_raw_log.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_raw_log.cpp > CMakeFiles/scand.dir/src/onec_raw_log.cpp.i
 
 CMakeFiles/scand.dir/src/onec_raw_log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_raw_log.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_raw_log.cpp -o CMakeFiles/scand.dir/src/onec_raw_log.cpp.s
-
-CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_sync_repository.cpp
-CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o -MF CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o.d -o CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_sync_repository.cpp
-
-CMakeFiles/scand.dir/src/onec_sync_repository.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_sync_repository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_sync_repository.cpp > CMakeFiles/scand.dir/src/onec_sync_repository.cpp.i
-
-CMakeFiles/scand.dir/src/onec_sync_repository.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_sync_repository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_sync_repository.cpp -o CMakeFiles/scand.dir/src/onec_sync_repository.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_raw_log.cpp -o CMakeFiles/scand.dir/src/onec_raw_log.cpp.s
 
 CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o: /home/vitaliy/o1c_panel/scand/src/onec_url_normalizer.cpp
+CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o: /home/vitaliy/scand/src/onec_url_normalizer.cpp
 CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o -MF CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o.d -o CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o -c /home/vitaliy/o1c_panel/scand/src/onec_url_normalizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o -MF CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o.d -o CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o -c /home/vitaliy/scand/src/onec_url_normalizer.cpp
 
 CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/onec_url_normalizer.cpp > CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/onec_url_normalizer.cpp > CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.i
 
 CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/onec_url_normalizer.cpp -o CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/onec_url_normalizer.cpp -o CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.s
 
 CMakeFiles/scand.dir/src/ozon_client.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/ozon_client.cpp.o: /home/vitaliy/o1c_panel/scand/src/ozon_client.cpp
+CMakeFiles/scand.dir/src/ozon_client.cpp.o: /home/vitaliy/scand/src/ozon_client.cpp
 CMakeFiles/scand.dir/src/ozon_client.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/scand.dir/src/ozon_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/ozon_client.cpp.o -MF CMakeFiles/scand.dir/src/ozon_client.cpp.o.d -o CMakeFiles/scand.dir/src/ozon_client.cpp.o -c /home/vitaliy/o1c_panel/scand/src/ozon_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/scand.dir/src/ozon_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/ozon_client.cpp.o -MF CMakeFiles/scand.dir/src/ozon_client.cpp.o.d -o CMakeFiles/scand.dir/src/ozon_client.cpp.o -c /home/vitaliy/scand/src/ozon_client.cpp
 
 CMakeFiles/scand.dir/src/ozon_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/ozon_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/ozon_client.cpp > CMakeFiles/scand.dir/src/ozon_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/ozon_client.cpp > CMakeFiles/scand.dir/src/ozon_client.cpp.i
 
 CMakeFiles/scand.dir/src/ozon_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/ozon_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/ozon_client.cpp -o CMakeFiles/scand.dir/src/ozon_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/ozon_client.cpp -o CMakeFiles/scand.dir/src/ozon_client.cpp.s
 
 CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: /home/vitaliy/o1c_panel/scand/src/ozon_handlers.cpp
+CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: /home/vitaliy/scand/src/ozon_handlers.cpp
 CMakeFiles/scand.dir/src/ozon_handlers.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/scand.dir/src/ozon_handlers.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/ozon_handlers.cpp.o -MF CMakeFiles/scand.dir/src/ozon_handlers.cpp.o.d -o CMakeFiles/scand.dir/src/ozon_handlers.cpp.o -c /home/vitaliy/o1c_panel/scand/src/ozon_handlers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/scand.dir/src/ozon_handlers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/ozon_handlers.cpp.o -MF CMakeFiles/scand.dir/src/ozon_handlers.cpp.o.d -o CMakeFiles/scand.dir/src/ozon_handlers.cpp.o -c /home/vitaliy/scand/src/ozon_handlers.cpp
 
 CMakeFiles/scand.dir/src/ozon_handlers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/ozon_handlers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/ozon_handlers.cpp > CMakeFiles/scand.dir/src/ozon_handlers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/ozon_handlers.cpp > CMakeFiles/scand.dir/src/ozon_handlers.cpp.i
 
 CMakeFiles/scand.dir/src/ozon_handlers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/ozon_handlers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/ozon_handlers.cpp -o CMakeFiles/scand.dir/src/ozon_handlers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/ozon_handlers.cpp -o CMakeFiles/scand.dir/src/ozon_handlers.cpp.s
+
+CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o: /home/vitaliy/scand/src/product_catalog_pull.cpp
+CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o -MF CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o.d -o CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o -c /home/vitaliy/scand/src/product_catalog_pull.cpp
+
+CMakeFiles/scand.dir/src/product_catalog_pull.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/product_catalog_pull.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/product_catalog_pull.cpp > CMakeFiles/scand.dir/src/product_catalog_pull.cpp.i
+
+CMakeFiles/scand.dir/src/product_catalog_pull.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/product_catalog_pull.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/product_catalog_pull.cpp -o CMakeFiles/scand.dir/src/product_catalog_pull.cpp.s
 
 CMakeFiles/scand.dir/src/router.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/router.cpp.o: /home/vitaliy/o1c_panel/scand/src/router.cpp
+CMakeFiles/scand.dir/src/router.cpp.o: /home/vitaliy/scand/src/router.cpp
 CMakeFiles/scand.dir/src/router.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/scand.dir/src/router.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/router.cpp.o -MF CMakeFiles/scand.dir/src/router.cpp.o.d -o CMakeFiles/scand.dir/src/router.cpp.o -c /home/vitaliy/o1c_panel/scand/src/router.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/scand.dir/src/router.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/router.cpp.o -MF CMakeFiles/scand.dir/src/router.cpp.o.d -o CMakeFiles/scand.dir/src/router.cpp.o -c /home/vitaliy/scand/src/router.cpp
 
 CMakeFiles/scand.dir/src/router.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/router.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/router.cpp > CMakeFiles/scand.dir/src/router.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/router.cpp > CMakeFiles/scand.dir/src/router.cpp.i
 
 CMakeFiles/scand.dir/src/router.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/router.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/router.cpp -o CMakeFiles/scand.dir/src/router.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/router.cpp -o CMakeFiles/scand.dir/src/router.cpp.s
 
 CMakeFiles/scand.dir/src/sse_broker.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/sse_broker.cpp.o: /home/vitaliy/o1c_panel/scand/src/sse_broker.cpp
+CMakeFiles/scand.dir/src/sse_broker.cpp.o: /home/vitaliy/scand/src/sse_broker.cpp
 CMakeFiles/scand.dir/src/sse_broker.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/scand.dir/src/sse_broker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sse_broker.cpp.o -MF CMakeFiles/scand.dir/src/sse_broker.cpp.o.d -o CMakeFiles/scand.dir/src/sse_broker.cpp.o -c /home/vitaliy/o1c_panel/scand/src/sse_broker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/scand.dir/src/sse_broker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sse_broker.cpp.o -MF CMakeFiles/scand.dir/src/sse_broker.cpp.o.d -o CMakeFiles/scand.dir/src/sse_broker.cpp.o -c /home/vitaliy/scand/src/sse_broker.cpp
 
 CMakeFiles/scand.dir/src/sse_broker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/sse_broker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/sse_broker.cpp > CMakeFiles/scand.dir/src/sse_broker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/sse_broker.cpp > CMakeFiles/scand.dir/src/sse_broker.cpp.i
 
 CMakeFiles/scand.dir/src/sse_broker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/sse_broker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/sse_broker.cpp -o CMakeFiles/scand.dir/src/sse_broker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/sse_broker.cpp -o CMakeFiles/scand.dir/src/sse_broker.cpp.s
 
-CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o: /home/vitaliy/o1c_panel/scand/src/sync_checkpoint.cpp
-CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o -MF CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o.d -o CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o -c /home/vitaliy/o1c_panel/scand/src/sync_checkpoint.cpp
+CMakeFiles/scand.dir/src/string_utils.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/string_utils.cpp.o: /home/vitaliy/scand/src/string_utils.cpp
+CMakeFiles/scand.dir/src/string_utils.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/scand.dir/src/string_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/string_utils.cpp.o -MF CMakeFiles/scand.dir/src/string_utils.cpp.o.d -o CMakeFiles/scand.dir/src/string_utils.cpp.o -c /home/vitaliy/scand/src/string_utils.cpp
 
-CMakeFiles/scand.dir/src/sync_checkpoint.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/sync_checkpoint.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/sync_checkpoint.cpp > CMakeFiles/scand.dir/src/sync_checkpoint.cpp.i
+CMakeFiles/scand.dir/src/string_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/string_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/string_utils.cpp > CMakeFiles/scand.dir/src/string_utils.cpp.i
 
-CMakeFiles/scand.dir/src/sync_checkpoint.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/sync_checkpoint.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/sync_checkpoint.cpp -o CMakeFiles/scand.dir/src/sync_checkpoint.cpp.s
+CMakeFiles/scand.dir/src/string_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/string_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/string_utils.cpp -o CMakeFiles/scand.dir/src/string_utils.cpp.s
+
+CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o: /home/vitaliy/scand/src/sync_runs_repository.cpp
+CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o -MF CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o.d -o CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o -c /home/vitaliy/scand/src/sync_runs_repository.cpp
+
+CMakeFiles/scand.dir/src/sync_runs_repository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/sync_runs_repository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/sync_runs_repository.cpp > CMakeFiles/scand.dir/src/sync_runs_repository.cpp.i
+
+CMakeFiles/scand.dir/src/sync_runs_repository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/sync_runs_repository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/sync_runs_repository.cpp -o CMakeFiles/scand.dir/src/sync_runs_repository.cpp.s
 
 CMakeFiles/scand.dir/src/sync_service.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/sync_service.cpp.o: /home/vitaliy/o1c_panel/scand/src/sync_service.cpp
+CMakeFiles/scand.dir/src/sync_service.cpp.o: /home/vitaliy/scand/src/sync_service.cpp
 CMakeFiles/scand.dir/src/sync_service.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/scand.dir/src/sync_service.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sync_service.cpp.o -MF CMakeFiles/scand.dir/src/sync_service.cpp.o.d -o CMakeFiles/scand.dir/src/sync_service.cpp.o -c /home/vitaliy/o1c_panel/scand/src/sync_service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/scand.dir/src/sync_service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sync_service.cpp.o -MF CMakeFiles/scand.dir/src/sync_service.cpp.o.d -o CMakeFiles/scand.dir/src/sync_service.cpp.o -c /home/vitaliy/scand/src/sync_service.cpp
 
 CMakeFiles/scand.dir/src/sync_service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/sync_service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/sync_service.cpp > CMakeFiles/scand.dir/src/sync_service.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/sync_service.cpp > CMakeFiles/scand.dir/src/sync_service.cpp.i
 
 CMakeFiles/scand.dir/src/sync_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/sync_service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/sync_service.cpp -o CMakeFiles/scand.dir/src/sync_service.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/sync_service.cpp -o CMakeFiles/scand.dir/src/sync_service.cpp.s
 
 CMakeFiles/scand.dir/src/sync_state.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/sync_state.cpp.o: /home/vitaliy/o1c_panel/scand/src/sync_state.cpp
+CMakeFiles/scand.dir/src/sync_state.cpp.o: /home/vitaliy/scand/src/sync_state.cpp
 CMakeFiles/scand.dir/src/sync_state.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/scand.dir/src/sync_state.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sync_state.cpp.o -MF CMakeFiles/scand.dir/src/sync_state.cpp.o.d -o CMakeFiles/scand.dir/src/sync_state.cpp.o -c /home/vitaliy/o1c_panel/scand/src/sync_state.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/scand.dir/src/sync_state.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/sync_state.cpp.o -MF CMakeFiles/scand.dir/src/sync_state.cpp.o.d -o CMakeFiles/scand.dir/src/sync_state.cpp.o -c /home/vitaliy/scand/src/sync_state.cpp
 
 CMakeFiles/scand.dir/src/sync_state.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/sync_state.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/sync_state.cpp > CMakeFiles/scand.dir/src/sync_state.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/sync_state.cpp > CMakeFiles/scand.dir/src/sync_state.cpp.i
 
 CMakeFiles/scand.dir/src/sync_state.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/sync_state.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/sync_state.cpp -o CMakeFiles/scand.dir/src/sync_state.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/sync_state.cpp -o CMakeFiles/scand.dir/src/sync_state.cpp.s
+
+CMakeFiles/scand.dir/src/time_utils.cpp.o: CMakeFiles/scand.dir/flags.make
+CMakeFiles/scand.dir/src/time_utils.cpp.o: /home/vitaliy/scand/src/time_utils.cpp
+CMakeFiles/scand.dir/src/time_utils.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/scand.dir/src/time_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/time_utils.cpp.o -MF CMakeFiles/scand.dir/src/time_utils.cpp.o.d -o CMakeFiles/scand.dir/src/time_utils.cpp.o -c /home/vitaliy/scand/src/time_utils.cpp
+
+CMakeFiles/scand.dir/src/time_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/time_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/time_utils.cpp > CMakeFiles/scand.dir/src/time_utils.cpp.i
+
+CMakeFiles/scand.dir/src/time_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/time_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/time_utils.cpp -o CMakeFiles/scand.dir/src/time_utils.cpp.s
 
 CMakeFiles/scand.dir/src/webhook_store.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/webhook_store.cpp.o: /home/vitaliy/o1c_panel/scand/src/webhook_store.cpp
+CMakeFiles/scand.dir/src/webhook_store.cpp.o: /home/vitaliy/scand/src/webhook_store.cpp
 CMakeFiles/scand.dir/src/webhook_store.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/scand.dir/src/webhook_store.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/webhook_store.cpp.o -MF CMakeFiles/scand.dir/src/webhook_store.cpp.o.d -o CMakeFiles/scand.dir/src/webhook_store.cpp.o -c /home/vitaliy/o1c_panel/scand/src/webhook_store.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/scand.dir/src/webhook_store.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/webhook_store.cpp.o -MF CMakeFiles/scand.dir/src/webhook_store.cpp.o.d -o CMakeFiles/scand.dir/src/webhook_store.cpp.o -c /home/vitaliy/scand/src/webhook_store.cpp
 
 CMakeFiles/scand.dir/src/webhook_store.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/webhook_store.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/webhook_store.cpp > CMakeFiles/scand.dir/src/webhook_store.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/webhook_store.cpp > CMakeFiles/scand.dir/src/webhook_store.cpp.i
 
 CMakeFiles/scand.dir/src/webhook_store.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/webhook_store.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/webhook_store.cpp -o CMakeFiles/scand.dir/src/webhook_store.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/webhook_store.cpp -o CMakeFiles/scand.dir/src/webhook_store.cpp.s
 
 CMakeFiles/scand.dir/src/worker_pool.cpp.o: CMakeFiles/scand.dir/flags.make
-CMakeFiles/scand.dir/src/worker_pool.cpp.o: /home/vitaliy/o1c_panel/scand/src/worker_pool.cpp
+CMakeFiles/scand.dir/src/worker_pool.cpp.o: /home/vitaliy/scand/src/worker_pool.cpp
 CMakeFiles/scand.dir/src/worker_pool.cpp.o: CMakeFiles/scand.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/scand.dir/src/worker_pool.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/worker_pool.cpp.o -MF CMakeFiles/scand.dir/src/worker_pool.cpp.o.d -o CMakeFiles/scand.dir/src/worker_pool.cpp.o -c /home/vitaliy/o1c_panel/scand/src/worker_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/scand.dir/src/worker_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scand.dir/src/worker_pool.cpp.o -MF CMakeFiles/scand.dir/src/worker_pool.cpp.o.d -o CMakeFiles/scand.dir/src/worker_pool.cpp.o -c /home/vitaliy/scand/src/worker_pool.cpp
 
 CMakeFiles/scand.dir/src/worker_pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scand.dir/src/worker_pool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/o1c_panel/scand/src/worker_pool.cpp > CMakeFiles/scand.dir/src/worker_pool.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitaliy/scand/src/worker_pool.cpp > CMakeFiles/scand.dir/src/worker_pool.cpp.i
 
 CMakeFiles/scand.dir/src/worker_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scand.dir/src/worker_pool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/o1c_panel/scand/src/worker_pool.cpp -o CMakeFiles/scand.dir/src/worker_pool.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitaliy/scand/src/worker_pool.cpp -o CMakeFiles/scand.dir/src/worker_pool.cpp.s
 
 # Object files for target scand
 scand_OBJECTS = \
+"CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o" \
 "CMakeFiles/scand.dir/src/config.cpp.o" \
 "CMakeFiles/scand.dir/src/db_repository.cpp.o" \
 "CMakeFiles/scand.dir/src/handlers.cpp.o" \
 "CMakeFiles/scand.dir/src/hooks_handlers.cpp.o" \
 "CMakeFiles/scand.dir/src/http_server.cpp.o" \
+"CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o" \
+"CMakeFiles/scand.dir/src/inventory_preview.cpp.o" \
+"CMakeFiles/scand.dir/src/inventory_repository.cpp.o" \
 "CMakeFiles/scand.dir/src/main.cpp.o" \
 "CMakeFiles/scand.dir/src/notifier.cpp.o" \
 "CMakeFiles/scand.dir/src/onec_catalog.cpp.o" \
-"CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o" \
 "CMakeFiles/scand.dir/src/onec_client.cpp.o" \
+"CMakeFiles/scand.dir/src/onec_inventory.cpp.o" \
+"CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o" \
+"CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o" \
+"CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o" \
 "CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o" \
 "CMakeFiles/scand.dir/src/onec_raw_log.cpp.o" \
-"CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o" \
 "CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o" \
 "CMakeFiles/scand.dir/src/ozon_client.cpp.o" \
 "CMakeFiles/scand.dir/src/ozon_handlers.cpp.o" \
+"CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o" \
 "CMakeFiles/scand.dir/src/router.cpp.o" \
 "CMakeFiles/scand.dir/src/sse_broker.cpp.o" \
-"CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o" \
+"CMakeFiles/scand.dir/src/string_utils.cpp.o" \
+"CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o" \
 "CMakeFiles/scand.dir/src/sync_service.cpp.o" \
 "CMakeFiles/scand.dir/src/sync_state.cpp.o" \
+"CMakeFiles/scand.dir/src/time_utils.cpp.o" \
 "CMakeFiles/scand.dir/src/webhook_store.cpp.o" \
 "CMakeFiles/scand.dir/src/worker_pool.cpp.o"
 
 # External object files for target scand
 scand_EXTERNAL_OBJECTS =
 
+scand: CMakeFiles/scand.dir/src/allowed_warehouse_repository.cpp.o
 scand: CMakeFiles/scand.dir/src/config.cpp.o
 scand: CMakeFiles/scand.dir/src/db_repository.cpp.o
 scand: CMakeFiles/scand.dir/src/handlers.cpp.o
 scand: CMakeFiles/scand.dir/src/hooks_handlers.cpp.o
 scand: CMakeFiles/scand.dir/src/http_server.cpp.o
+scand: CMakeFiles/scand.dir/src/inventory_checkpoint_repository.cpp.o
+scand: CMakeFiles/scand.dir/src/inventory_preview.cpp.o
+scand: CMakeFiles/scand.dir/src/inventory_repository.cpp.o
 scand: CMakeFiles/scand.dir/src/main.cpp.o
 scand: CMakeFiles/scand.dir/src/notifier.cpp.o
 scand: CMakeFiles/scand.dir/src/onec_catalog.cpp.o
-scand: CMakeFiles/scand.dir/src/onec_catalog_sync.cpp.o
 scand: CMakeFiles/scand.dir/src/onec_client.cpp.o
+scand: CMakeFiles/scand.dir/src/onec_inventory.cpp.o
+scand: CMakeFiles/scand.dir/src/onec_ka2_inventory.cpp.o
+scand: CMakeFiles/scand.dir/src/onec_odata_preflight.cpp.o
+scand: CMakeFiles/scand.dir/src/onec_product_catalog.cpp.o
 scand: CMakeFiles/scand.dir/src/onec_product_mapper.cpp.o
 scand: CMakeFiles/scand.dir/src/onec_raw_log.cpp.o
-scand: CMakeFiles/scand.dir/src/onec_sync_repository.cpp.o
 scand: CMakeFiles/scand.dir/src/onec_url_normalizer.cpp.o
 scand: CMakeFiles/scand.dir/src/ozon_client.cpp.o
 scand: CMakeFiles/scand.dir/src/ozon_handlers.cpp.o
+scand: CMakeFiles/scand.dir/src/product_catalog_pull.cpp.o
 scand: CMakeFiles/scand.dir/src/router.cpp.o
 scand: CMakeFiles/scand.dir/src/sse_broker.cpp.o
-scand: CMakeFiles/scand.dir/src/sync_checkpoint.cpp.o
+scand: CMakeFiles/scand.dir/src/string_utils.cpp.o
+scand: CMakeFiles/scand.dir/src/sync_runs_repository.cpp.o
 scand: CMakeFiles/scand.dir/src/sync_service.cpp.o
 scand: CMakeFiles/scand.dir/src/sync_state.cpp.o
+scand: CMakeFiles/scand.dir/src/time_utils.cpp.o
 scand: CMakeFiles/scand.dir/src/webhook_store.cpp.o
 scand: CMakeFiles/scand.dir/src/worker_pool.cpp.o
 scand: CMakeFiles/scand.dir/build.make
@@ -448,11 +592,12 @@ scand: libinih.a
 scand: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.81.0
 scand: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.81.0
 scand: _deps/cpr-build/cpr/libcpr.so.1.14.0
+scand: /usr/lib/x86_64-linux-gnu/libcrypto.so
 scand: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.81.0
 scand: _deps/curl-build/lib/libcurl.so.4.8.0
 scand: /usr/lib/x86_64-linux-gnu/libpqxx.so
 scand: CMakeFiles/scand.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable scand"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable scand"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scand.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -464,6 +609,6 @@ CMakeFiles/scand.dir/clean:
 .PHONY : CMakeFiles/scand.dir/clean
 
 CMakeFiles/scand.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/CMakeFiles/scand.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand /home/vitaliy/scand/build /home/vitaliy/scand/build /home/vitaliy/scand/build/CMakeFiles/scand.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/scand.dir/depend
 

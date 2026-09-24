@@ -1,8 +1,8 @@
 _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/adler32_avx512.c \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/adler32_avx512.c \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/adler32_avx512_tpl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/adler32_avx512_tpl.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -27,13 +27,13 @@ _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../adler32_p.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../adler32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../cpu_features.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../adler32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../crc32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../arch/x86/x86_features.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../adler32_p.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../adler32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../cpu_features.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../adler32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../crc32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../arch/x86/x86_features.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/immintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/x86gprintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/ia32intrin.h \
@@ -120,5 +120,5 @@ _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/keylockerintrin.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/adler32_avx512_p.h
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/adler32_avx512_p.h

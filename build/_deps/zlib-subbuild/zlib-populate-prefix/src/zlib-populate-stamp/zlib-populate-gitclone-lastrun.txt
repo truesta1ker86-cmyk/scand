@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/usr/bin/cmake;-P;/home/vitaliy/o1c_panel/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/tmp/zlib-populate-gitclone.cmake
-source_dir=/home/vitaliy/o1c_panel/scand/build/_deps/zlib-src
-work_dir=/home/vitaliy/o1c_panel/scand/build/_deps
+command=/usr/bin/cmake;-P;/home/vitaliy/scand/build/_deps/zlib-subbuild/zlib-populate-prefix/tmp/zlib-populate-gitclone.cmake
+source_dir=/home/vitaliy/scand/build/_deps/zlib-src
+work_dir=/home/vitaliy/scand/build/_deps
 repository=https://github.com/zlib-ng/zlib-ng
 remote=origin
 init_submodules=TRUE

@@ -24,10 +24,10 @@ size_t OnecProductMapper::skipped_count(const std::vector<OnecCatalogRow>& rows)
     return n;
 }
 
-std::vector<Product_1с> OnecProductMapper::map(
+std::vector<Product1C> OnecProductMapper::map(
     const std::vector<OnecCatalogRow>& rows)
 {
-    std::vector<Product_1с> out;
+    std::vector<Product1C> out;
     out.reserve(rows.size());
 
     for (const auto& r : rows) {
@@ -35,7 +35,7 @@ std::vector<Product_1с> OnecProductMapper::map(
         if (is_truthy(r.deletion_mark)) continue;
         if (r.ref_key.empty())          continue;
 
-        Product_1с p;
+        Product1C p;
         p.id       = r.ref_key;
         p.offer_id = r.article.empty() ? r.code : r.article;
         p.name     = r.full_name.empty() ? r.name : r.full_name;

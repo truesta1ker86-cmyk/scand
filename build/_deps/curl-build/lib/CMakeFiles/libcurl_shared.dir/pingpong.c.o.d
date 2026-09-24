@@ -1,8 +1,8 @@
 _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/pingpong.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/pingpong.c \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/pingpong.c \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_setup.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/curl_config.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_setup.h \
+ /home/vitaliy/scand/build/_deps/curl-build/lib/curl_config.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -42,7 +42,7 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/pingpong.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -80,7 +80,7 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/pingpong.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/assert.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_setup_once.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_setup_once.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
@@ -114,13 +114,13 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/pingpong.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/functypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_ctype.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/urldata.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/cookie.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/functypes.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_ctype.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/urldata.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/cookie.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -129,80 +129,80 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/pingpong.c.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/easy.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/multi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/urlapi.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/options.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/header.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/websockets.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/typecheck-gcc.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/llist.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/psl.h \
- /home/vitaliy/o1c_panel/scand/build/libpsl_src-install/include/libpsl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/formdata.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/easy.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/multi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/urlapi.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/options.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/header.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/websockets.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/typecheck-gcc.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/llist.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/psl.h \
+ /home/vitaliy/scand/build/libpsl_src-install/include/libpsl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/formdata.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/timeval.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/timediff.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/http_chunks.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/dynbuf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/hostip.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/hash.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_addrinfo.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/timeval.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/timediff.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/http_chunks.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/dynbuf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/hostip.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/hash.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_addrinfo.h \
  /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/arpa/inet.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/asyn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/httpsrr.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_threads.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/asyn.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/httpsrr.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_threads.h \
  /usr/include/setjmp.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/hash_offt.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/splay.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/dynhds.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/request.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/bufq.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/netrc.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/mime.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/imap.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/pingpong.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_sasl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/bufref.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/pop3.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/smtp.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/ftp.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/file.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/vssh/ssh.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_setup.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/vssh/curl_path.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/urldata.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/http.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/ws.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/rtsp.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/smb.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/mqtt.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/ftplistparser.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/multihandle.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/conncache.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/cshutdn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/multi_ev.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/socketpair.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/cf-socket.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/nonblock.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/sockaddr.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/cfilters.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/connect.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/sendf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_trc.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/select.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/hash_offt.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/splay.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/dynhds.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/request.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/bufq.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/netrc.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/mime.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/imap.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/pingpong.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_sasl.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/bufref.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/pop3.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/smtp.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/ftp.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/file.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/vssh/ssh.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_setup.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/vssh/curl_path.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/urldata.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/http.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/ws.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/rtsp.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/smb.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/mqtt.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/ftplistparser.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/multihandle.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/conncache.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/cshutdn.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/multi_ev.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/socketpair.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/cf-socket.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/nonblock.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/sockaddr.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/cfilters.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/connect.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/sendf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_trc.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/select.h \
  /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/progress.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/speedcheck.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/multiif.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/vtls/vtls.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/strdup.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_printf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/mprintf.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_memory.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/memdebug.h
+ /home/vitaliy/scand/build/_deps/curl-src/lib/progress.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/speedcheck.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/multiif.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/vtls/vtls.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/strdup.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_printf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/mprintf.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_memory.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/memdebug.h

@@ -1,4 +1,5 @@
 #include "onec_url_normalizer.hpp"
+#include "string_utils.hpp"
 #include <algorithm>
 #include <arpa/inet.h>
 #include <cctype>
@@ -9,31 +10,12 @@
 
 namespace {
 
-// ---------------------------------------------------------------------------
-// Утилиты
-// ---------------------------------------------------------------------------
-
-std::string to_lower(std::string s) {
-    std::transform(s.begin(), s.end(), s.begin(),
-                   [](unsigned char c) { return std::tolower(c); });
-    return s;
-}
-
-std::string trim(const std::string& s) {
-    size_t start = s.find_first_not_of(" \t\r\n");
-    if (start == std::string::npos) return "";
-    size_t end = s.find_last_not_of(" \t\r\n");
-    return s.substr(start, end - start + 1);
-}
-
-bool ends_with_ci(const std::string& s, const std::string& suffix) {
-    if (s.size() < suffix.size()) return false;
-    return to_lower(s.substr(s.size() - suffix.size())) == to_lower(suffix);
-}
+using scand::str_utils::to_lower;
+using scand::str_utils::trim;
+using scand::str_utils::ends_with_ci;
 
 // ---------------------------------------------------------------------------
 // Разбор URL: scheme://host[:port]/path
-// Возвращает false, если не удалось распарсить.
 // ---------------------------------------------------------------------------
 struct ParsedUrl {
     std::string scheme;
@@ -46,7 +28,6 @@ struct ParsedUrl {
 };
 
 bool parse_url(const std::string& url, ParsedUrl& out) {
-    // scheme
     auto scheme_end = url.find("://");
     if (scheme_end == std::string::npos) return false;
 
@@ -69,27 +50,26 @@ bool parse_url(const std::string& url, ParsedUrl& out) {
         rest = rest.substr(0, query_pos);
     }
 
-    // authority (host[:port]) и path
+    // authority + path
     std::string authority;
     auto slash_pos = rest.find('/');
     if (slash_pos == std::string::npos) {
         authority = rest;
-        out.path = "";
+        out.path  = "";
     } else {
         authority = rest.substr(0, slash_pos);
-        out.path = rest.substr(slash_pos);
+        out.path  = rest.substr(slash_pos);
     }
 
     // userinfo
     auto at_pos = authority.find('@');
     if (at_pos != std::string::npos) {
         out.has_userinfo = true;
-        authority = authority.substr(at_pos + 1);  // игнорируем user:pass
+        authority = authority.substr(at_pos + 1);
     }
 
     // hostname / port
     if (!authority.empty() && authority.front() == '[') {
-        // IPv6 literal [::1]:80
         auto close = authority.find(']');
         if (close == std::string::npos) return false;
         out.hostname = authority.substr(1, close - 1);
@@ -107,6 +87,21 @@ bool parse_url(const std::string& url, ParsedUrl& out) {
     }
 
     if (out.hostname.empty()) return false;
+
+    out.hostname = to_lower(out.hostname);
+
+    if (!out.port.empty()) {
+        for (char c : out.port) {
+            if (!std::isdigit(static_cast<unsigned char>(c))) return false;
+        }
+        try {
+            int p = std::stoi(out.port);
+            if (p < 1 || p > 65535) return false;
+        } catch (...) {
+            return false;
+        }
+    }
+
     return true;
 }
 
@@ -128,7 +123,7 @@ bool is_ip_literal(const std::string& hostname, bool& is_ipv6) {
 }
 
 // ---------------------------------------------------------------------------
-// Проверка: loopback (127.0.0.0/8, ::1)
+// Loopback: 127.0.0.0/8, ::1, localhost
 // ---------------------------------------------------------------------------
 bool is_loopback_ip(const std::string& hostname) {
     in_addr  v4{};
@@ -138,16 +133,17 @@ bool is_loopback_ip(const std::string& hostname) {
         return (h >> 24) == 127;
     }
     if (inet_pton(AF_INET6, hostname.c_str(), &v6) == 1) {
-        // ::1
         static const uint8_t loop6[16] = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,1};
         return std::memcmp(&v6, loop6, 16) == 0;
     }
-    if (hostname == "localhost") return true;
+    std::string h = to_lower(hostname);
+    if (!h.empty() && h.back() == '.') h.pop_back();
+    if (h == "localhost") return true;
     return false;
 }
 
 // ---------------------------------------------------------------------------
-// Проверка: private / link-local / metadata IP
+// Private / link-local / metadata / CGNAT
 // ---------------------------------------------------------------------------
 bool is_private_ip(const std::string& hostname) {
     in_addr  v4{};
@@ -156,40 +152,55 @@ bool is_private_ip(const std::string& hostname) {
     if (inet_pton(AF_INET, hostname.c_str(), &v4) == 1) {
         uint32_t h = ntohl(v4.s_addr);
 
-        // 10.0.0.0/8
-        if ((h >> 24) == 10) return true;
-
-        // 172.16.0.0/12
-        if ((h >> 24) == 172 && ((h >> 16) & 0xFF) >= 16 && ((h >> 16) & 0xFF) <= 31)
-            return true;
-
-        // 192.168.0.0/16
-        if ((h >> 24) == 192 && ((h >> 16) & 0xFF) == 168) return true;
-
-        // 169.254.0.0/16 — link-local + AWS/GCP metadata
-        if ((h >> 24) == 169 && ((h >> 16) & 0xFF) == 254) return true;
-
-        // 100.64.0.0/10 — CGNAT
-        if ((h >> 24) == 100 && ((h >> 16) & 0xFF) >= 64 && ((h >> 16) & 0xFF) <= 127)
-            return true;
-
-        // 0.0.0.0/8
-        if ((h >> 24) == 0) return true;
-
+        if ((h >> 24) == 10) return true;                              // 10/8
+        if ((h >> 24) == 172 && ((h >> 16) & 0xFF) >= 16
+            && ((h >> 16) & 0xFF) <= 31) return true;                  // 172.16/12
+        if ((h >> 24) == 192 && ((h >> 16) & 0xFF) == 168) return true; // 192.168/16
+        if ((h >> 24) == 169 && ((h >> 16) & 0xFF) == 254) return true; // 169.254/16
+        if ((h >> 24) == 100 && ((h >> 16) & 0xFF) >= 64
+            && ((h >> 16) & 0xFF) <= 127) return true;                 // 100.64/10
+        if ((h >> 24) == 0) return true;                               // 0/8
         return false;
     }
 
     if (inet_pton(AF_INET6, hostname.c_str(), &v6) == 1) {
-        // fc00::/7 — unique local
-        if ((v6.s6_addr[0] & 0xFE) == 0xFC) return true;
-
-        // fe80::/10 — link-local
-        if (v6.s6_addr[0] == 0xFE && (v6.s6_addr[1] & 0xC0) == 0x80) return true;
-
+        if ((v6.s6_addr[0] & 0xFE) == 0xFC) return true;               // fc00::/7
+        if (v6.s6_addr[0] == 0xFE
+            && (v6.s6_addr[1] & 0xC0) == 0x80) return true;            // fe80::/10
         return false;
     }
 
     return false;
+}
+
+// ---------------------------------------------------------------------------
+// Резолв hostname и проверка всех IP (DNS rebinding)
+// ---------------------------------------------------------------------------
+bool hostname_resolves_to_internal(const std::string& hostname) {
+    addrinfo hints{};
+    hints.ai_family   = AF_UNSPEC;
+    hints.ai_socktype = SOCK_STREAM;
+
+    addrinfo* res = nullptr;
+    if (getaddrinfo(hostname.c_str(), nullptr, &hints, &res) != 0)
+        return true;
+
+    bool bad = false;
+    for (auto* p = res; p != nullptr; p = p->ai_next) {
+        char buf[INET6_ADDRSTRLEN] = {0};
+        void* addr = (p->ai_family == AF_INET)
+            ? static_cast<void*>(&reinterpret_cast<sockaddr_in*>(p->ai_addr)->sin_addr)
+            : static_cast<void*>(&reinterpret_cast<sockaddr_in6*>(p->ai_addr)->sin6_addr);
+
+        if (!inet_ntop(p->ai_family, addr, buf, sizeof(buf))) continue;
+
+        if (is_private_ip(buf) || is_loopback_ip(buf)) {
+            bad = true;
+            break;
+        }
+    }
+    freeaddrinfo(res);
+    return bad;
 }
 
 } // namespace
@@ -214,8 +225,7 @@ std::string normalize_onec_publication_url(
 
     if (parsed.has_userinfo || parsed.has_query || parsed.has_fragment) {
         throw OnecConnectionInputError(
-            "Адрес 1С не должен содержать логин, пароль или параметры."
-        );
+            "Адрес 1С не должен содержать логин, пароль или параметры.");
     }
 
     // --- Блокировка private / loopback / link-local / metadata ---
@@ -227,10 +237,24 @@ std::string normalize_onec_publication_url(
         && options.allow_insecure_http
         && is_loopback_ip(parsed.hostname);
 
-    if (literal && is_private_ip(parsed.hostname) && !local_test_target) {
+    // NEW: если включён allow_private_network — не блокируем private IP
+    if (!options.allow_private_network
+        && literal
+        && is_private_ip(parsed.hostname)
+        && !local_test_target) {
         throw OnecConnectionInputError(
-            "Адрес 1С не должен указывать на внутреннюю сеть сервиса."
-        );
+            "Адрес 1С не должен указывать на внутреннюю сеть сервиса.");
+    }
+
+    // --- DNS rebinding protection ---
+    // NEW: тоже уважает allow_private_network
+    if (!options.allow_private_network
+        && !literal
+        && !local_test_target) {
+        if (hostname_resolves_to_internal(parsed.hostname)) {
+            throw OnecConnectionInputError(
+                "Адрес 1С не должен указывать на внутреннюю сеть сервиса.");
+        }
     }
 
     // --- HTTP разрешён только для loopback при явном флаге ---
@@ -239,8 +263,7 @@ std::string normalize_onec_publication_url(
         && !options.allow_insecure_http)
     {
         throw OnecConnectionInputError(
-            "Для внешней базы 1С требуется рабочий HTTPS."
-        );
+            "Для внешней базы 1С требуется рабочий HTTPS.");
     }
 
     // --- Убираем trailing "/" из path ---

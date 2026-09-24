@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/inih.dir/third_party/inih/ini.c.o"
-  "CMakeFiles/inih.dir/third_party/inih/ini.c.o.d"
+  "CMakeFiles/inih.dir/_deps/inih-src/ini.c.o"
+  "CMakeFiles/inih.dir/_deps/inih-src/ini.c.o.d"
   "libinih.a"
   "libinih.pdb"
 )

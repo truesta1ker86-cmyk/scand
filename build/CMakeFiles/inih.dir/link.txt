@@ -1,2 +1,2 @@
-/usr/bin/ar qc libinih.a CMakeFiles/inih.dir/third_party/inih/ini.c.o
+/usr/bin/ar qc libinih.a "CMakeFiles/inih.dir/_deps/inih-src/ini.c.o"
 /usr/bin/ranlib libinih.a

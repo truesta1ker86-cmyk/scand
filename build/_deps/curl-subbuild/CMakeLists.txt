@@ -14,8 +14,8 @@ project(curl-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(curl-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "URL" "https://github.com/curl/curl/releases/download/curl-8_13_0/curl-8.13.0.tar.xz" "URL_HASH" "SHA256=4a093979a3c2d02de2fbc00549a32771007f2e78032c6faa5ecd2f7a9e152025"
-                    SOURCE_DIR          "/home/vitaliy/o1c_panel/scand/build/_deps/curl-src"
-                    BINARY_DIR          "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build"
+                    SOURCE_DIR          "/home/vitaliy/scand/build/_deps/curl-src"
+                    BINARY_DIR          "/home/vitaliy/scand/build/_deps/curl-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -13,6 +13,7 @@ struct RequestContext {
     const http::request<http::string_body>& req;
     json::value                             body;
     std::unordered_map<std::string, std::string> path_params;
+    std::unordered_map<std::string, std::string> query_params;
 };
 
 struct Response {

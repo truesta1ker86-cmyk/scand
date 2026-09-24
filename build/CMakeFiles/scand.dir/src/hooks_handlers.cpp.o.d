@@ -1,9 +1,7 @@
 CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: \
- /home/vitaliy/o1c_panel/scand/src/hooks_handlers.cpp \
- /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/include/hooks_handlers.hpp \
- /home/vitaliy/o1c_panel/scand/include/router.hpp \
- /usr/include/boost/beast/http.hpp \
+ /home/vitaliy/scand/src/hooks_handlers.cpp /usr/include/stdc-predef.h \
+ /home/vitaliy/scand/include/hooks_handlers.hpp \
+ /home/vitaliy/scand/include/router.hpp /usr/include/boost/beast/http.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
@@ -65,6 +63,7 @@ CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/12/bits/std_abs.h \
  /usr/include/boost/config/detail/posix_features.hpp \
@@ -147,9 +146,9 @@ CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/12/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/c++/12/cerrno \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
@@ -1084,8 +1083,7 @@ CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: \
  /usr/include/boost/json/detail/value_to.hpp \
  /usr/include/boost/describe/enum_from_string.hpp \
  /usr/include/boost/json/visit.hpp /usr/include/boost/json/impl/visit.hpp \
- /home/vitaliy/o1c_panel/scand/include/sse_broker.hpp \
- /usr/include/boost/asio.hpp \
+ /home/vitaliy/scand/include/sse_broker.hpp /usr/include/boost/asio.hpp \
  /usr/include/boost/asio/any_completion_executor.hpp \
  /usr/include/boost/asio/impl/any_completion_executor.ipp \
  /usr/include/boost/asio/any_completion_handler.hpp \
@@ -1810,9 +1808,10 @@ CMakeFiles/scand.dir/src/hooks_handlers.cpp.o: \
  /usr/include/boost/beast/websocket/impl/read.hpp \
  /usr/include/boost/beast/websocket/impl/stream.hpp \
  /usr/include/boost/beast/websocket/impl/write.hpp \
- /usr/include/boost/beast/zlib.hpp /usr/include/c++/12/set \
- /usr/include/c++/12/bits/stl_tree.h /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/boost/beast/zlib.hpp /usr/include/c++/12/deque \
+ /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
+ /usr/include/c++/12/set /usr/include/c++/12/bits/stl_tree.h \
+ /usr/include/c++/12/bits/stl_set.h \
  /usr/include/c++/12/bits/stl_multiset.h \
- /home/vitaliy/o1c_panel/scand/include/webhook_store.hpp \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
- /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/iostream
+ /home/vitaliy/scand/include/webhook_store.hpp \
+ /usr/include/c++/12/iostream

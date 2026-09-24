@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
 
-CXX_INCLUDES = -I/home/vitaliy/o1c_panel/scand/include -I/home/vitaliy/o1c_panel/scand/third_party/inih -I/home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include -I/home/vitaliy/o1c_panel/scand/build/_deps/cpr-build/cpr_generated_includes -I/home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include -isystem /usr/include/postgresql
+CXX_INCLUDES = -I/home/vitaliy/scand/include -I/home/vitaliy/scand/build/_deps/inih-src -I/home/vitaliy/scand/build/_deps/cpr-src/include -I/home/vitaliy/scand/build/_deps/cpr-build/cpr_generated_includes -I/home/vitaliy/scand/build/_deps/curl-src/include -isystem /usr/include/postgresql
 
-CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -O0 -g -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -O2 -g -std=gnu++17
 

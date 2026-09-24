@@ -1,15 +1,19 @@
 #pragma once
+#include "db_pool.hpp"
 #include "db_repository.hpp"
 #include "notifier.hpp"
-#include "onec_catalog_sync.hpp"
 #include "onec_client.hpp"
-#include "onec_sync_repository.hpp"
 #include "ozon_client.hpp"
+#include "sync_runs_repository.hpp"
 #include "sync_state.hpp"
 #include "worker_pool.hpp"
+
 #include <atomic>
+#include <boost/json.hpp>
 #include <chrono>
+#include <condition_variable>
 #include <cstdint>
+#include <iostream>
 #include <memory>
 #include <mutex>
 #include <optional>
@@ -19,13 +23,13 @@ class SyncService {
 public:
     SyncService(OnecClient& onec,
                 OzonClient& ozon,
-                OnecCatalogSync& onec_catalog_sync,
-                OnecSyncRepository& onec_repo,
                 DbRepository& db,
                 WorkerPool& pool,
                 std::shared_ptr<Notifier> notifier,
+                std::shared_ptr<scand::db::ConnectionPool> db_pool,
                 int notify_every_percent = 5,
-                int notify_min_interval_sec = 2);
+                int notify_min_interval_sec = 2,
+                std::shared_ptr<SyncRunsRepository> sync_runs_repo = nullptr);
 
     // Ozon
     bool trigger_ozon_sync();
@@ -34,12 +38,16 @@ public:
     bool is_ozon_running() const { return ozon_running_.load(); }
     SyncProgress current_ozon_progress() const;
 
-    // 1С каталог
-    bool trigger_onec_sync();
-    bool trigger_onec_full();
-    void stop_onec();
-    bool is_onec_running() const { return onec_running_.load(); }
-    SyncProgress current_onec_progress() const;
+    boost::json::object ozon_snapshot() const;
+
+    // Сброс in-memory состояния Ozon (используется /api/sync/reset)
+    void reset_ozon_progress();
+
+    // Product catalog (SSE)
+    bool trigger_product_catalog_pull();
+    bool is_product_catalog_running() const {
+        return pc_running_.load(std::memory_order_relaxed);
+    }
 
     // 1С старый режим
     bool trigger_full();
@@ -50,11 +58,15 @@ public:
     void resume_on_start();
     std::optional<SyncProgress> take_pending_resume();
 
+    // graceful shutdown
+    void request_stop();
+    bool is_shutting_down() const { return shutting_down_.load(); }
+
 private:
     void run_full_sync();
     void run_single_sync(std::string product_id);
     void run_ozon_sync();
-    void run_onec_sync(bool full_reset, uint64_t my_gen);
+    void run_product_catalog_pull();
 
     void maybe_flush_checkpoint(const SyncCheckpoint& cp, bool force = false);
     void send_progress(const std::string& source,
@@ -63,12 +75,15 @@ private:
                        SyncCheckpoint& cp);
 
     bool has_unfinished_ozon_sync(SyncCheckpoint& out_cp);
-    bool has_unfinished_onec_sync();
+
+    std::string ozon_job_start(const std::string& kind);
+    void        ozon_job_finish_done(long long accepted,
+                                     long long migrated,
+                                     long long conflicts);
+    void        ozon_job_finish_failed(const std::string& error);
 
     OnecClient&         onec_;
     OzonClient&         ozon_;
-    OnecCatalogSync&    onec_catalog_sync_;
-    OnecSyncRepository& onec_repo_;
     DbRepository&       db_;
     WorkerPool&         pool_;
     std::shared_ptr<Notifier> notifier_;
@@ -78,13 +93,13 @@ private:
     mutable std::mutex progress_mutex_;
     SyncProgress       ozon_progress_;
 
-    std::atomic<bool> onec_running_{false};
-    std::atomic<bool> onec_stop_{false};
-    std::atomic<uint64_t> onec_generation_{0};   // ← generation для 1С
-    mutable std::mutex onec_progress_mutex_;
-    SyncProgress       onec_progress_;
-
     std::atomic<bool> running_{false};
+    std::atomic<bool> pc_running_{false};
+    std::shared_ptr<scand::db::ConnectionPool> db_pool_;
+
+    std::shared_ptr<SyncRunsRepository> sync_runs_repo_;
+    std::string  ozon_job_id_;
+    mutable std::mutex ozon_job_mutex_;
 
     int notify_every_percent_;
     int notify_min_interval_sec_;
@@ -93,6 +108,8 @@ private:
 
     std::mutex                  pending_mutex_;
     std::optional<SyncProgress> pending_resume_;
+
+    std::atomic<bool> shutting_down_{false};
 
     static constexpr int CHECKPOINT_FLUSH_EVERY  = 10;
     static constexpr int MAX_RETRY_DELAY_SEC     = 60;

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/flags.make
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o: _deps/curl-src/docs/examples/10-at-a-time.c
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o -MF CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o.d -o CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o -c /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/10-at-a-time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o -MF CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o.d -o CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o -c /home/vitaliy/scand/build/_deps/curl-src/docs/examples/10-at-a-time.c
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.i"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/10-at-a-time.c > CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.i
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/scand/build/_deps/curl-src/docs/examples/10-at-a-time.c > CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.i
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.s"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/10-at-a-time.c -o CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.s
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/scand/build/_deps/curl-src/docs/examples/10-at-a-time.c -o CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.s
 
 # Object files for target curl-example-10-at-a-time
 curl__example__10__at__a__time_OBJECTS = \
@@ -98,18 +98,18 @@ _deps/curl-build/docs/examples/10-at-a-time: /usr/lib/x86_64-linux-gnu/libcrypto
 _deps/curl-build/docs/examples/10-at-a-time: /usr/lib/x86_64-linux-gnu/libz.so
 _deps/curl-build/docs/examples/10-at-a-time: libpsl_src-install/lib/libpsl.a
 _deps/curl-build/docs/examples/10-at-a-time: _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable 10-at-a-time"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-10-at-a-time.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable 10-at-a-time"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-10-at-a-time.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build: _deps/curl-build/docs/examples/10-at-a-time
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-10-at-a-time.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-10-at-a-time.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/clean
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src/docs/examples /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build/docs/examples /home/vitaliy/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/depend
 

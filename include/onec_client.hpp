@@ -7,10 +7,12 @@
 class OnecClient {
 public:
     OnecClient(std::string base_url, std::string user, std::string password,
-               int page_size, int timeout_ms);
+               int page_size, int timeout_ms,
+               bool allow_insecure_http   = false,   // NEW (был зашит)
+               bool allow_private_network = false);  // NEW
 
-    std::vector<Product_1с> fetch_page(int page) const;
-    std::optional<Product_1с> fetch_product(const std::string& id) const;
+    std::vector<Product1C> fetch_page(int page) const;
+    std::optional<Product1C> fetch_product(const std::string& id) const;
 
     // Сырой ответ от 1С (для отладки)
     struct RawResponse {
@@ -27,4 +29,6 @@ public:
 private:
     std::string base_url_, user_, password_;
     int         page_size_, timeout_ms_;
+    bool        allow_insecure_http_   = false;  // NEW
+    bool        allow_private_network_ = false;  // NEW
 };

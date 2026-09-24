@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(libpsl_src-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/rockdaboot/libpsl.git" "GIT_TAG" "0.21.5"
-                    SOURCE_DIR          "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-src"
-                    BINARY_DIR          "/home/vitaliy/o1c_panel/scand/build/_deps/libpsl_src-build"
+                    SOURCE_DIR          "/home/vitaliy/scand/build/_deps/libpsl_src-src"
+                    BINARY_DIR          "/home/vitaliy/scand/build/_deps/libpsl_src-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

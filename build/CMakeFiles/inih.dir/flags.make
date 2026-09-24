@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/vitaliy/o1c_panel/scand/third_party/inih
+C_INCLUDES = -I/home/vitaliy/scand/build/_deps/inih-src
 
 C_FLAGS = -O3 -DNDEBUG
 

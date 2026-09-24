@@ -14,8 +14,11 @@ int config_ini_handler(void* user, const char* section,
 
     try {
         if (is("server")) {
-            if (in("address")) cfg->listen_address = value;
-            else if (in("port")) cfg->listen_port = static_cast<unsigned short>(std::stoi(value));
+            if (in("address"))                    cfg->listen_address = value;
+            else if (in("port"))                  cfg->listen_port =
+                                                      static_cast<unsigned short>(std::stoi(value));
+            else if (in("shutdown_timeout_sec"))  cfg->shutdown_timeout_sec =
+                                                      std::stoi(value);
         }
         else if (is("onec")) {
             if (in("base_url"))        cfg->onec_base_url = value;
@@ -26,6 +29,12 @@ int config_ini_handler(void* user, const char* section,
             else if (in("allow_insecure_http"))
                 cfg->onec_allow_insecure_http =
                     (std::string(value) == "true" || std::string(value) == "1");
+
+            // NEW: разрешить 1С-адрес в частной сети
+            // (когда сервис и 1С находятся в одном контуре)
+            else if (in("allow_private_network"))
+                cfg->onec_allow_private_network =
+                    (std::string(value) == "true" || std::string(value) == "1");
         }
         else if (is("database")) {
             if (in("conn_str")) cfg->db_conn_str = value;
@@ -35,10 +44,10 @@ int config_ini_handler(void* user, const char* section,
             else if (in("queue_max")) cfg->task_queue_max = std::stoi(value);
         }
         else if (is("ozon")) {
-            if (in("client_id"))       cfg->ozon_client_id = value;
-            else if (in("api_key"))    cfg->ozon_api_key = value;
-            else if (in("page_size"))  cfg->ozon_page_size = std::stoi(value);
-            else if (in("timeout_ms")) cfg->ozon_timeout_ms = std::stoi(value);
+            if (in("client_id"))        cfg->ozon_client_id = value;
+            else if (in("api_key"))     cfg->ozon_api_key = value;
+            else if (in("page_size"))   cfg->ozon_page_size = std::stoi(value);
+            else if (in("timeout_ms"))  cfg->ozon_timeout_ms = std::stoi(value);
             else if (in("webhook_url")) cfg->ozon_webhook_url = value;
         }
         else if (is("notify")) {
@@ -69,6 +78,25 @@ Config Config::load(const std::string& path) {
         throw std::runtime_error("Config: [worker_pool] threads must be > 0");
     if (cfg.task_queue_max <= 0)
         throw std::runtime_error("Config: [worker_pool] queue_max must be > 0");
+    if (cfg.shutdown_timeout_sec <= 0)
+        throw std::runtime_error("Config: [server] shutdown_timeout_sec must be > 0");
 
     return cfg;
+}
+
+
+namespace {
+    const Config* g_config = nullptr;
+}
+
+void set_global_config(const Config& cfg) {
+    g_config = &cfg;
+}
+
+const Config& global_config() {
+    if (g_config == nullptr) {
+        throw std::runtime_error(
+            "global_config(): config не инициализирован");
+    }
+    return *g_config;
 }

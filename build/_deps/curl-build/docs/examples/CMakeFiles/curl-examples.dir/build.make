@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Utility rule file for curl-examples.
 
@@ -74,10 +74,10 @@ _deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/build: curl-examples
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/build
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-examples.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-examples.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/clean
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src/docs/examples /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build/docs/examples /home/vitaliy/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-examples.dir/depend
 

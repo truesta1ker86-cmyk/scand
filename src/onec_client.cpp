@@ -5,19 +5,37 @@
 
 namespace json = boost::json;
 
+// ---------------------------------------------------------------------------
+// Конструктор
+// ---------------------------------------------------------------------------
 OnecClient::OnecClient(std::string base_url, std::string user, std::string password,
-                       int page_size, int timeout_ms)
+                       int page_size, int timeout_ms,
+                       bool allow_insecure_http,
+                       bool allow_private_network)
     : base_url_(std::move(base_url))
     , user_(std::move(user))
     , password_(std::move(password))
     , page_size_(page_size)
-    , timeout_ms_(timeout_ms) {}
+    , timeout_ms_(timeout_ms)
+    , allow_insecure_http_(allow_insecure_http)
+    , allow_private_network_(allow_private_network)
+{
+    // Preflight не вызывается в этом классе (нет <onec_odata_preflight>),
+    // но флаги сохраняются: если решите добавить проверку — используйте их.
+    // Например:
+    //
+    //   scand::onec::odata::probe_onec_odata(
+    //       base_url_, user_, password_,
+    //       allow_insecure_http_,
+    //       timeout_ms_,
+    //       allow_private_network_);
+}
 
 // ---------------------------------------------------------------------------
 // Страница товаров 1С
 // ---------------------------------------------------------------------------
-std::vector<Product_1с> OnecClient::fetch_page(int page) const {
-    std::vector<Product_1с> products;
+std::vector<Product1C> OnecClient::fetch_page(int page) const {
+    std::vector<Product1C> products;
 
     std::string url = base_url_ + "/products?page="
                     + std::to_string(page)
@@ -50,7 +68,7 @@ std::vector<Product_1с> OnecClient::fetch_page(int page) const {
                 if (!item.is_object()) continue;
                 auto& obj = item.as_object();
 
-                Product_1с p;
+                Product1C p;
                 p.id       = obj.contains("id")       ? json::value_to<std::string>(obj.at("id"))       : "";
                 p.offer_id = obj.contains("offer_id") ? json::value_to<std::string>(obj.at("offer_id")) : "";
                 p.name     = obj.contains("name")     ? json::value_to<std::string>(obj.at("name"))     : "";
@@ -69,7 +87,7 @@ std::vector<Product_1с> OnecClient::fetch_page(int page) const {
 // ---------------------------------------------------------------------------
 // Один товар 1С
 // ---------------------------------------------------------------------------
-std::optional<Product_1с> OnecClient::fetch_product(const std::string& id) const {
+std::optional<Product1C> OnecClient::fetch_product(const std::string& id) const {
     std::string url = base_url_ + "/products/" + id;
 
     cpr::Response r = cpr::Get(
@@ -89,7 +107,7 @@ std::optional<Product_1с> OnecClient::fetch_product(const std::string& id) cons
 
         if (!obj) return std::nullopt;
 
-        Product_1с p;
+        Product1C p;
         p.id       = obj->contains("id")       ? json::value_to<std::string>(obj->at("id"))       : id;
         p.offer_id = obj->contains("offer_id") ? json::value_to<std::string>(obj->at("offer_id")) : "";
         p.name     = obj->contains("name")     ? json::value_to<std::string>(obj->at("name"))     : "";

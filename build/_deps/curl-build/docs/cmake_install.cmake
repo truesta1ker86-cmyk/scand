@@ -1,4 +1,4 @@
-# Install script for directory: /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs
+# Install script for directory: /home/vitaliy/scand/build/_deps/curl-src/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,14 +44,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/libcurl/cmake_install.cmake")
+  include("/home/vitaliy/scand/build/_deps/curl-build/docs/libcurl/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/curl-config.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/vitaliy/scand/build/_deps/curl-build/docs/curl-config.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/mk-ca-bundle.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/vitaliy/scand/build/_deps/curl-build/docs/mk-ca-bundle.1")
 endif()
 

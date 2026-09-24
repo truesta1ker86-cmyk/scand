@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Utility rule file for curl_uninstall.
 
@@ -67,7 +67,7 @@ include _deps/curl-build/CMakeFiles/curl_uninstall.dir/compiler_depend.make
 include _deps/curl-build/CMakeFiles/curl_uninstall.dir/progress.make
 
 _deps/curl-build/CMakeFiles/curl_uninstall:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build && /usr/bin/cmake -P /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/CMake/cmake_uninstall.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build && /usr/bin/cmake -P /home/vitaliy/scand/build/_deps/curl-build/CMake/cmake_uninstall.cmake
 
 curl_uninstall: _deps/curl-build/CMakeFiles/curl_uninstall
 curl_uninstall: _deps/curl-build/CMakeFiles/curl_uninstall.dir/build.make
@@ -78,10 +78,10 @@ _deps/curl-build/CMakeFiles/curl_uninstall.dir/build: curl_uninstall
 .PHONY : _deps/curl-build/CMakeFiles/curl_uninstall.dir/build
 
 _deps/curl-build/CMakeFiles/curl_uninstall.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build && $(CMAKE_COMMAND) -P CMakeFiles/curl_uninstall.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build && $(CMAKE_COMMAND) -P CMakeFiles/curl_uninstall.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/CMakeFiles/curl_uninstall.dir/clean
 
 _deps/curl-build/CMakeFiles/curl_uninstall.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/CMakeFiles/curl_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build /home/vitaliy/scand/build/_deps/curl-build/CMakeFiles/curl_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/CMakeFiles/curl_uninstall.dir/depend
 

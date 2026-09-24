@@ -1,4 +1,4 @@
-# Install script for directory: /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src
+# Install script for directory: /home/vitaliy/scand/build/_deps/cpr-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,21 +44,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vitaliy/o1c_panel/scand/build/_deps/zlib-build/cmake_install.cmake")
+  include("/home/vitaliy/scand/build/_deps/zlib-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/cmake_install.cmake")
+  include("/home/vitaliy/scand/build/_deps/curl-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vitaliy/o1c_panel/scand/build/_deps/cpr-build/cpr/cmake_install.cmake")
+  include("/home/vitaliy/scand/build/_deps/cpr-build/cpr/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vitaliy/o1c_panel/scand/build/_deps/cpr-build/include/cmake_install.cmake")
+  include("/home/vitaliy/scand/build/_deps/cpr-build/include/cmake_install.cmake")
 endif()
 

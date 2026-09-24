@@ -1,8 +1,8 @@
 _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/ldap.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/ldap.c \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/ldap.c \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_setup.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/curl_config.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_setup.h \
+ /home/vitaliy/scand/build/_deps/curl-build/lib/curl_config.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -42,7 +42,7 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/ldap.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/system.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -80,7 +80,7 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/ldap.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/assert.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_setup_once.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_setup_once.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
@@ -114,5 +114,5 @@ _deps/curl-build/lib/CMakeFiles/libcurl_shared.dir/ldap.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/functypes.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/lib/curl_ctype.h
+ /home/vitaliy/scand/build/_deps/curl-src/lib/functypes.h \
+ /home/vitaliy/scand/build/_deps/curl-src/lib/curl_ctype.h

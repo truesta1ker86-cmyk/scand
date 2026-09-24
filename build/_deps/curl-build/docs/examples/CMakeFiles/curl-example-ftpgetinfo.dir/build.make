@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/fl
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/flags.make
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o: _deps/curl-src/docs/examples/ftpgetinfo.c
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o -MF CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o.d -o CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o -c /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/ftpgetinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o -MF CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o.d -o CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o -c /home/vitaliy/scand/build/_deps/curl-src/docs/examples/ftpgetinfo.c
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.i"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/ftpgetinfo.c > CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.i
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/scand/build/_deps/curl-src/docs/examples/ftpgetinfo.c > CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.i
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.s"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/ftpgetinfo.c -o CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.s
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/scand/build/_deps/curl-src/docs/examples/ftpgetinfo.c -o CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.s
 
 # Object files for target curl-example-ftpgetinfo
 curl__example__ftpgetinfo_OBJECTS = \
@@ -98,18 +98,18 @@ _deps/curl-build/docs/examples/ftpgetinfo: /usr/lib/x86_64-linux-gnu/libcrypto.s
 _deps/curl-build/docs/examples/ftpgetinfo: /usr/lib/x86_64-linux-gnu/libz.so
 _deps/curl-build/docs/examples/ftpgetinfo: libpsl_src-install/lib/libpsl.a
 _deps/curl-build/docs/examples/ftpgetinfo: _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ftpgetinfo"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-ftpgetinfo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ftpgetinfo"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-ftpgetinfo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build: _deps/curl-build/docs/examples/ftpgetinfo
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-ftpgetinfo.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-ftpgetinfo.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/clean
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src/docs/examples /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build/docs/examples /home/vitaliy/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/depend
 

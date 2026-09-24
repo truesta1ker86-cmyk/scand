@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitaliy/o1c_panel/scand
+CMAKE_SOURCE_DIR = /home/vitaliy/scand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitaliy/o1c_panel/scand/build
+CMAKE_BINARY_DIR = /home/vitaliy/scand/build
 
 # Include any dependencies generated for this target.
 include _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/flags.make
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: _deps/curl-src/docs/examples/multi-legacy.c
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -MF CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o.d -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -c /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/multi-legacy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -MF CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o.d -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -c /home/vitaliy/scand/build/_deps/curl-src/docs/examples/multi-legacy.c
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/multi-legacy.c > CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vitaliy/scand/build/_deps/curl-src/docs/examples/multi-legacy.c > CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples/multi-legacy.c -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vitaliy/scand/build/_deps/curl-src/docs/examples/multi-legacy.c -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s
 
 # Object files for target curl-example-multi-legacy
 curl__example__multi__legacy_OBJECTS = \
@@ -98,18 +98,18 @@ _deps/curl-build/docs/examples/multi-legacy: /usr/lib/x86_64-linux-gnu/libcrypto
 _deps/curl-build/docs/examples/multi-legacy: /usr/lib/x86_64-linux-gnu/libz.so
 _deps/curl-build/docs/examples/multi-legacy: libpsl_src-install/lib/libpsl.a
 _deps/curl-build/docs/examples/multi-legacy: _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/o1c_panel/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable multi-legacy"
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-multi-legacy.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vitaliy/scand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable multi-legacy"
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-multi-legacy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build: _deps/curl-build/docs/examples/multi-legacy
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/clean:
-	cd /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-multi-legacy.dir/cmake_clean.cmake
+	cd /home/vitaliy/scand/build/_deps/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-multi-legacy.dir/cmake_clean.cmake
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/clean
 
 _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/depend:
-	cd /home/vitaliy/o1c_panel/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/o1c_panel/scand /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/docs/examples /home/vitaliy/o1c_panel/scand/build /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples /home/vitaliy/o1c_panel/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vitaliy/scand/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitaliy/scand /home/vitaliy/scand/build/_deps/curl-src/docs/examples /home/vitaliy/scand/build /home/vitaliy/scand/build/_deps/curl-build/docs/examples /home/vitaliy/scand/build/_deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/depend
 

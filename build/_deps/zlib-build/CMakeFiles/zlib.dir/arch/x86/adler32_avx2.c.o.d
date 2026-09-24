@@ -1,5 +1,5 @@
 _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx2.c.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/adler32_avx2.c \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/adler32_avx2.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/immintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/x86gprintrin.h \
@@ -101,8 +101,8 @@ _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx2.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/keylockerintrin.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/adler32_avx2_tpl.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/adler32_avx2_tpl.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../zbuild.h \
  /usr/include/string.h /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -110,7 +110,7 @@ _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx2.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../adler32_fold.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../adler32_p.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/zlib-src/arch/x86/adler32_avx2_p.h
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../adler32_fold.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../adler32_p.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/../../fallback_builtins.h \
+ /home/vitaliy/scand/build/_deps/zlib-src/arch/x86/adler32_avx2_p.h

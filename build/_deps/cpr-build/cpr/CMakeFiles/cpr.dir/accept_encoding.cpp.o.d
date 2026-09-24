@@ -1,8 +1,8 @@
 _deps/cpr-build/cpr/CMakeFiles/cpr.dir/accept_encoding.cpp.o: \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/cpr/accept_encoding.cpp \
+ /home/vitaliy/scand/build/_deps/cpr-src/cpr/accept_encoding.cpp \
  /usr/include/stdc-predef.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/cpr-src/include/cpr/accept_encoding.h \
- /home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include/curl/curlver.h \
+ /home/vitaliy/scand/build/_deps/cpr-src/include/cpr/accept_encoding.h \
+ /home/vitaliy/scand/build/_deps/curl-src/include/curl/curlver.h \
  /usr/include/c++/12/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vitaliy/o1c_panel/scand/third_party/inih/ini.c" "CMakeFiles/inih.dir/third_party/inih/ini.c.o" "gcc" "CMakeFiles/inih.dir/third_party/inih/ini.c.o.d"
+  "/home/vitaliy/scand/build/_deps/inih-src/ini.c" "CMakeFiles/inih.dir/_deps/inih-src/ini.c.o" "gcc" "CMakeFiles/inih.dir/_deps/inih-src/ini.c.o.d"
   )
 
 # Targets to which this target links.

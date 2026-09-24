@@ -50,13 +50,13 @@ unset(_cmake_expected_targets)
 add_library(CURL::libcurl_shared SHARED IMPORTED)
 
 set_target_properties(CURL::libcurl_shared PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/vitaliy/o1c_panel/scand/build/_deps/curl-src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/vitaliy/scand/build/_deps/curl-src/include"
 )
 
 # Import target "CURL::libcurl_shared" for configuration "Release"
 set_property(TARGET CURL::libcurl_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(CURL::libcurl_shared PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/vitaliy/o1c_panel/scand/build/_deps/curl-build/lib/libcurl.so.4.8.0"
+  IMPORTED_LOCATION_RELEASE "/home/vitaliy/scand/build/_deps/curl-build/lib/libcurl.so.4.8.0"
   IMPORTED_SONAME_RELEASE "libcurl.so.4"
   )
 

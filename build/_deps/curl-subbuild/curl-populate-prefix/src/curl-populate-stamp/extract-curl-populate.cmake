@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/vitaliy/o1c_panel/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.13.0.tar.xz" ABSOLUTE)
-get_filename_component(directory "/home/vitaliy/o1c_panel/scand/build/_deps/curl-src" ABSOLUTE)
+get_filename_component(filename "/home/vitaliy/scand/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.13.0.tar.xz" ABSOLUTE)
+get_filename_component(directory "/home/vitaliy/scand/build/_deps/curl-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'
