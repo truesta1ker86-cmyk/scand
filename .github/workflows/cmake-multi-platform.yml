@@ -77,6 +77,6 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT || 22 }}
           script: |
-            chmod +x /opt/scand/scand
+            chmod +x /scand
             # Перезапускаем вашу systemd службу автоматического запуска
             sudo systemctl restart scand.service || echo "Служба scand.service еще не создана на сервере"
