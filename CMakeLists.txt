@@ -55,7 +55,10 @@ file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 
 add_executable(scand ${ALL_SOURCES})
 
-target_include_directories(scand PRIVATE include)
+target_include_directories(scand PRIVATE
+    include
+    ${inih_SOURCE_DIR}  # <- Добавляем путь к заголовочным файлам библиотеки ini.h
+)
 
 target_link_libraries(scand PRIVATE
     inih                # или INIReader (в зависимости от вашего C/C++ API)
