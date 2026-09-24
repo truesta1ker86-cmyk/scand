@@ -13,7 +13,7 @@ include(FetchContent)
 # 1. CPR (C++ Requests)
 FetchContent_Declare(
     cpr
-    GIT_REPOSITORY https://github.com
+    GIT_REPOSITORY https://github.com/libcpr/cpr.git
     GIT_TAG 99f140d222152fa7332b0ae433ad899086ece3fd
 )
 # Выключаем libpsl, чтобы обойти баг с meson на воркерах и Linux
@@ -25,7 +25,7 @@ FetchContent_MakeAvailable(cpr)
 set(INIH_BUILD_TESTS OFF CACHE INTERNAL "")
 FetchContent_Declare(
     inih
-    GIT_REPOSITORY https://github.com
+    GIT_REPOSITORY https://github.com/benhoyt/inih.git
     GIT_TAG r53
 )
 FetchContent_MakeAvailable(inih)
@@ -35,7 +35,7 @@ FetchContent_MakeAvailable(inih)
 set(SKIP_BUILD_TESTS ON CACHE INTERNAL "")
 FetchContent_Declare(
     libpqxx
-    GIT_REPOSITORY https://github.com
+    GIT_REPOSITORY https://github.com/jtv/libpqxx.git
     GIT_TAG 7.9.2        # <- ОБНОВИЛИ ТЕГ ДО 7.9.2 ДЛЯ ИСПРАВЛЕНИЯ ОШИБКИ CMAKE
 )
 FetchContent_MakeAvailable(libpqxx)
