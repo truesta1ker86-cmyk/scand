@@ -13,7 +13,7 @@ include(FetchContent)
 # 1. CPR (C++ Requests)
 FetchContent_Declare(
     cpr
-    GIT_REPOSITORY https://github.com/libcpr/cpr.git
+    GIT_REPOSITORY https://github.com
     GIT_TAG 99f140d222152fa7332b0ae433ad899086ece3fd
 )
 # Выключаем libpsl, чтобы обойти баг с meson на воркерах и Linux
@@ -25,20 +25,18 @@ FetchContent_MakeAvailable(cpr)
 set(INIH_BUILD_TESTS OFF CACHE INTERNAL "")
 FetchContent_Declare(
     inih
-    GIT_REPOSITORY https://github.com/benhoyt/inih.git
+    GIT_REPOSITORY https://github.com
     GIT_TAG r53
 )
 FetchContent_MakeAvailable(inih)
-# ВАЖНО: Репозиторий benhoyt/inih содержит свой CMakeLists.txt.
-# Он автоматически создает таргет `inih::inih`. add_library(inih) руками БОЛЬШЕ НЕ НУЖЕН.
 
 # 3. libpqxx (Официальный драйвер PostgreSQL для C++)
-# Фиксируем последнюю стабильную версию из ветки 7.x, поддерживающую C++17
+# Версия 7.9.2 содержит исправление бага совместимости со свежим CMake!
 set(SKIP_BUILD_TESTS ON CACHE INTERNAL "")
 FetchContent_Declare(
     libpqxx
-    GIT_REPOSITORY https://github.com/jtv/libpqxx.git
-    GIT_TAG 7.9.1
+    GIT_REPOSITORY https://github.com
+    GIT_TAG 7.9.2        # <- ОБНОВИЛИ ТЕГ ДО 7.9.2 ДЛЯ ИСПРАВЛЕНИЯ ОШИБКИ CMAKE
 )
 FetchContent_MakeAvailable(libpqxx)
 
@@ -60,12 +58,12 @@ add_executable(scand ${ALL_SOURCES})
 target_include_directories(scand PRIVATE include)
 
 target_link_libraries(scand PRIVATE
-    inih           # Официальный таргет от FetchContent (заменяет старый инлайновый инклюд)
+    inih                # или INIReader (в зависимости от вашего C/C++ API)
     Boost::system
     Boost::json
     Threads::Threads
     cpr::cpr
-    pqxx_static         # Новая библиотека 7.9.1 вместо системной PkgConfig::PQXX
+    pqxx_static         # Нативный статический таргет libpqxx
     OpenSSL::Crypto
 )
 
