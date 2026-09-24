@@ -6,21 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
 
-macro(find_program variable)
-    if("${ARGV1}" STREQUAL "meson")
-        set(${variable} "MESON-NOTFOUND" CACHE INTERNAL "")
-    else()
-        _find_program(${variable} ${ARGN})
-    endif()
-endmacro()
-
-file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/fake_libpsl")
-FetchContent_Declare(
-    libpsl_src
-    SOURCE_DIR "${CMAKE_BINARY_DIR}/fake_libpsl"
-)
-FetchContent_MakeAvailable(libpsl_src)
-
+set(CPR_SKIP_LIBPSL_BUILD TRUE CACHE INTERNAL "")
 
 FetchContent_Declare(
     cpr
@@ -32,6 +18,7 @@ set(CPR_BUILD_REQS_FROM_SOURCE OFF CACHE INTERNAL "")
 set(CMAKE_USE_LIBPSL OFF CACHE INTERNAL "")
 set(CURL_USE_LIBPSL OFF CACHE INTERNAL "")
 set(CPR_BUILD_TESTS OFF CACHE INTERNAL "")
+
 FetchContent_MakeAvailable(cpr)
 
 # 2. inih (INI Not Invented Here)
